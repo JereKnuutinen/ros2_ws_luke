@@ -1,0 +1,1 @@
+cmd='/usr/bin/cmake;-DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd_vendor_install;-DZSTD_BUILD_STATIC=OFF;-DZSTD_BUILD_SHARED=ON;-DZSTD_BUILD_PROGRAMS=OFF;-DCMAKE_BUILD_TYPE=Release;-DCMAKE_CXX_COMPILER=/usr/bin/c++;-DCMAKE_CXX_FLAGS=;-GUnix Makefiles;<SOURCE_DIR><SOURCE_SUBDIR>'

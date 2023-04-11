@@ -1,0 +1,3 @@
+/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/lib/librosbag2_cpp.so
+/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/cmake/export_rosbag2_cppExport.cmake
+/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/cmake/export_rosbag2_cppExport-release.cmake

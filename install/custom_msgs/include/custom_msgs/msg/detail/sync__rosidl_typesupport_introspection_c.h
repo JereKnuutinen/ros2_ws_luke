@@ -1,0 +1,1 @@
+/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesupport_introspection_c.h

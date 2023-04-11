@@ -1,0 +1,1 @@
+/home/mlemsalu/ros2_ws_luke/build/message_sync/ament_cmake_core/message_syncConfig-version.cmake

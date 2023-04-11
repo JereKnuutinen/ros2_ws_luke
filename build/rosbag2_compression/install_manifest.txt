@@ -1,0 +1,3 @@
+/home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/lib/librosbag2_compression.so
+/home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/cmake/export_rosbag2_compressionExport.cmake
+/home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/cmake/export_rosbag2_compressionExport-release.cmake

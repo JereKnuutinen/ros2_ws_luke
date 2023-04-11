@@ -1,0 +1,136 @@
+[0.013s] Invoking command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_compression': AMENT_PREFIX_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage:/home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor:/home/mlemsalu/ros2_ws_luke/install/shared_queues_vendor:/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage:/home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor:/home/mlemsalu/ros2_ws_luke/install/shared_queues_vendor:/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/lib:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins/lib:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/rosbag2_compression -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/install/rosbag2_compression
+[0.058s] -- The C compiler identification is GNU 9.4.0
+[0.103s] -- The CXX compiler identification is GNU 9.4.0
+[0.107s] -- Check for working C compiler: /usr/bin/cc
+[0.163s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.164s] -- Detecting C compiler ABI info
+[0.220s] -- Detecting C compiler ABI info - done
+[0.229s] -- Detecting C compile features
+[0.230s] -- Detecting C compile features - done
+[0.232s] -- Check for working CXX compiler: /usr/bin/c++
+[0.296s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.297s] -- Detecting CXX compiler ABI info
+[0.367s] -- Detecting CXX compiler ABI info - done
+[0.377s] -- Detecting CXX compile features
+[0.377s] -- Detecting CXX compile features - done
+[0.379s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.399s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.399s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.530s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.551s] -- Found pluginlib: 2.5.4 (/opt/ros/foxy/share/pluginlib/cmake)
+[0.583s] -- Found rosbag2_cpp: 0.7.0 (/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/cmake)
+[0.616s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.621s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.682s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.699s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.756s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.806s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.807s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.808s] -- Looking for pthread.h
+[0.867s] -- Looking for pthread.h - found
+[0.867s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.927s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.927s] -- Looking for pthread_create in pthreads
+[0.976s] -- Looking for pthread_create in pthreads - not found
+[0.976s] -- Looking for pthread_create in pthread
+[1.034s] -- Looking for pthread_create in pthread - found
+[1.035s] -- Found Threads: TRUE  
+[1.180s] -- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+[1.189s] -- Found ament_cmake_gmock: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gmock/cmake)
+[1.190s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.191s] -- Found rosbag2_test_common: 0.7.0 (/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/cmake)
+[1.257s] -- Found gmock sources under '/opt/ros/foxy/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[1.261s] -- Found ament_cmake_gtest: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[1.262s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.272s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.274s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.274s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/rosbag2_compression/include>;/home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/rosbag2_compression/include
+[1.274s] -- Configured cppcheck exclude dirs and/or files: 
+[1.276s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.276s] -- Configured cpplint exclude dirs and/or files: 
+[1.277s] -- Added test 'lint_cmake' to check CMake code style
+[1.279s] -- Added test 'uncrustify' to check C / C++ code style
+[1.279s] -- Configured uncrustify additional arguments: 
+[1.280s] -- Added test 'xmllint' to check XML markup files
+[1.285s] -- Configuring done
+[1.319s] -- Generating done
+[1.320s] -- Build files have been written to: /home/mlemsalu/ros2_ws_luke/build/rosbag2_compression
+[1.327s] Invoked command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_compression' returned '0': AMENT_PREFIX_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage:/home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor:/home/mlemsalu/ros2_ws_luke/install/shared_queues_vendor:/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage:/home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor:/home/mlemsalu/ros2_ws_luke/install/shared_queues_vendor:/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/lib:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins/lib:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/rosbag2_compression -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/install/rosbag2_compression
+[1.330s] Invoking command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_compression': AMENT_PREFIX_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage:/home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor:/home/mlemsalu/ros2_ws_luke/install/shared_queues_vendor:/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage:/home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor:/home/mlemsalu/ros2_ws_luke/install/shared_queues_vendor:/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/lib:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins/lib:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/mlemsalu/ros2_ws_luke/build/rosbag2_compression -- -j12 -l12
+[1.366s] [35m[1mScanning dependencies of target gmock[0m
+[1.368s] [35m[1mScanning dependencies of target gmock_main[0m
+[1.368s] [35m[1mScanning dependencies of target rosbag2_compression[0m
+[1.385s] [  4%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[1.385s] [  9%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/foxy/src/gtest_vendor/src/gtest-all.cc.o[0m
+[1.391s] [ 14%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[1.394s] [ 19%] [32mBuilding CXX object CMakeFiles/rosbag2_compression.dir/src/rosbag2_compression/sequential_compression_writer.cpp.o[0m
+[1.395s] [ 23%] [32mBuilding CXX object CMakeFiles/rosbag2_compression.dir/src/rosbag2_compression/compression_factory.cpp.o[0m
+[1.396s] [ 33%] [32mBuilding CXX object CMakeFiles/rosbag2_compression.dir/src/rosbag2_compression/compression_options.cpp.o[0m
+[1.396s] [ 33%] [32mBuilding CXX object CMakeFiles/rosbag2_compression.dir/src/rosbag2_compression/sequential_compression_reader.cpp.o[0m
+[2.393s] [ 38%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[2.435s] [ 38%] Built target gmock_main
+[8.162s] [ 42%] [32m[1mLinking CXX shared library librosbag2_compression.so[0m
+[8.268s] [ 42%] Built target rosbag2_compression
+[8.278s] [35m[1mScanning dependencies of target fake_plugin[0m
+[8.292s] [ 47%] [32mBuilding CXX object CMakeFiles/fake_plugin.dir/test/rosbag2_compression/fake_compressor.cpp.o[0m
+[8.295s] [ 52%] [32mBuilding CXX object CMakeFiles/fake_plugin.dir/test/rosbag2_compression/fake_decompressor.cpp.o[0m
+[8.870s] [ 57%] [32m[1mLinking CXX static library libgmock.a[0m
+[8.906s] [ 57%] Built target gmock
+[8.919s] [35m[1mScanning dependencies of target test_sequential_compression_writer[0m
+[8.920s] [35m[1mScanning dependencies of target test_sequential_compression_reader[0m
+[8.920s] [35m[1mScanning dependencies of target test_compression_factory[0m
+[8.920s] [35m[1mScanning dependencies of target test_compression_options[0m
+[8.942s] [ 61%] [32mBuilding CXX object CMakeFiles/test_compression_factory.dir/test/rosbag2_compression/test_compression_factory.cpp.o[0m
+[8.943s] [ 66%] [32mBuilding CXX object CMakeFiles/test_compression_options.dir/test/rosbag2_compression/test_compression_options.cpp.o[0m
+[8.955s] [ 71%] [32mBuilding CXX object CMakeFiles/test_sequential_compression_reader.dir/test/rosbag2_compression/test_sequential_compression_reader.cpp.o[0m
+[8.958s] [ 76%] [32mBuilding CXX object CMakeFiles/test_sequential_compression_writer.dir/test/rosbag2_compression/test_sequential_compression_writer.cpp.o[0m
+[9.150s] [ 80%] [32m[1mLinking CXX shared library libfake_plugin.so[0m
+[9.273s] [ 80%] Built target fake_plugin
+[10.081s] [ 85%] [32m[1mLinking CXX executable test_compression_factory[0m
+[10.232s] [ 85%] Built target test_compression_factory
+[10.366s] [ 90%] [32m[1mLinking CXX executable test_compression_options[0m
+[10.507s] [ 90%] Built target test_compression_options
+[16.877s] [ 95%] [32m[1mLinking CXX executable test_sequential_compression_writer[0m
+[17.028s] [ 95%] Built target test_sequential_compression_writer
+[18.203s] [100%] [32m[1mLinking CXX executable test_sequential_compression_reader[0m
+[18.346s] [100%] Built target test_sequential_compression_reader
+[18.355s] Invoked command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_compression' returned '0': AMENT_PREFIX_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage:/home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor:/home/mlemsalu/ros2_ws_luke/install/shared_queues_vendor:/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage:/home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor:/home/mlemsalu/ros2_ws_luke/install/shared_queues_vendor:/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/lib:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins/lib:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/mlemsalu/ros2_ws_luke/build/rosbag2_compression -- -j12 -l12
+[18.394s] Invoking command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_compression': AMENT_PREFIX_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage:/home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor:/home/mlemsalu/ros2_ws_luke/install/shared_queues_vendor:/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage:/home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor:/home/mlemsalu/ros2_ws_luke/install/shared_queues_vendor:/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/lib:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins/lib:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/mlemsalu/ros2_ws_luke/build/rosbag2_compression
+[18.401s] -- Install configuration: "Release"
+[18.401s] -- Execute custom install script
+[18.402s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/include/rosbag2_compression/base_compressor_interface.hpp
+[18.409s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/include/rosbag2_compression/base_decompressor_interface.hpp
+[18.416s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/include/rosbag2_compression/compression_factory.hpp
+[18.424s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/include/rosbag2_compression/compression_options.hpp
+[18.431s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/include/rosbag2_compression/sequential_compression_reader.hpp
+[18.438s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/include/rosbag2_compression/sequential_compression_writer.hpp
+[18.446s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/include/rosbag2_compression/visibility_control.hpp
+[18.453s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/environment/library_path.sh
+[18.460s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/environment/library_path.dsv
+[18.468s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/lib/libfake_plugin.so
+[18.475s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/test/rosbag2_compression/fake_plugin.xml
+[18.483s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/ament_index/resource_index/package_run_dependencies/rosbag2_compression
+[18.491s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/ament_index/resource_index/parent_prefix_path/rosbag2_compression
+[18.498s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/environment/ament_prefix_path.sh
+[18.506s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/environment/ament_prefix_path.dsv
+[18.513s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/environment/path.sh
+[18.521s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/environment/path.dsv
+[18.529s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/local_setup.bash
+[18.536s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/local_setup.sh
+[18.544s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/local_setup.zsh
+[18.551s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/local_setup.dsv
+[18.558s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/package.dsv
+[18.566s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/ament_index/resource_index/packages/rosbag2_compression
+[18.574s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/ament_index/resource_index/rosbag2_compression__pluginlib__plugin/rosbag2_compression
+[18.581s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.589s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/cmake/ament_cmake_export_libraries-extras.cmake
+[18.596s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/cmake/ament_cmake_export_targets-extras.cmake
+[18.604s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.611s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/cmake/rosbag2_compressionConfig.cmake
+[18.618s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/cmake/rosbag2_compressionConfig-version.cmake
+[18.626s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/package.xml
+[18.633s] -- Installing: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/lib/librosbag2_compression.so
+[18.634s] -- Set runtime path of "/home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/lib/librosbag2_compression.so" to ""
+[18.634s] -- Installing: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/cmake/export_rosbag2_compressionExport.cmake
+[18.634s] -- Installing: /home/mlemsalu/ros2_ws_luke/install/rosbag2_compression/share/rosbag2_compression/cmake/export_rosbag2_compressionExport-release.cmake
+[18.638s] Invoked command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_compression' returned '0': AMENT_PREFIX_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage:/home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor:/home/mlemsalu/ros2_ws_luke/install/shared_queues_vendor:/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage:/home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor:/home/mlemsalu/ros2_ws_luke/install/shared_queues_vendor:/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common:/opt/ros/foxy LD_LIBRARY_PATH=/home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/lib:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage_default_plugins/lib:/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/mlemsalu/ros2_ws_luke/build/rosbag2_compression

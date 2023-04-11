@@ -1,0 +1,43 @@
+In file included from [01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/can_cpp_node.cpp:31[m[K:
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/ISOBUSframe.hpp:[m[K In constructor ‘[01m[KISOBUSFrame::ISOBUSFrame(uint32_t, const uint8_t*, size_t)[m[K’:
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/ISOBUSframe.hpp:49:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   49 |         for(int i=0;[01;35m[Ki<size[m[K;i++) {
+      |                     [01;35m[K~^~~~~[m[K
+In file included from [01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/can_cpp_node.cpp:32[m[K:
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/NMEA2000_node.hpp:[m[K In constructor ‘[01m[KNMEA2000Parser::NMEA2000Parser()[m[K’:
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/NMEA2000_node.hpp:64:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kincre[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   64 |         int [01;35m[Kincre[m[K = 0;
+      |             [01;35m[K^~~~~[m[K
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/NMEA2000_node.hpp:[m[K In member function ‘[01m[Kvoid NMEA2000Parser::Isobus_parser(custom_msgs::msg::Isobus)[m[K’:
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/NMEA2000_node.hpp:92:38:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 2 has type ‘[01m[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >::_sec_type[m[K’ {aka ‘[01m[Kint[m[K’} [[01;35m[K-Wformat=[m[K]
+   92 |                 printf("Timestamp: [01;35m[K%ld[m[K seconds, %ld nanoseconds\n", [32m[Kmsg.header.stamp.sec[m[K, msg.header.stamp.nanosec);
+      |                                    [01;35m[K~~^[m[K                              [32m[K~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                      [01;35m[K|[m[K                                               [32m[K|[m[K
+      |                                      [01;35m[Klong int[m[K                                        [32m[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >::_sec_type {aka int}[m[K
+      |                                    [32m[K%d[m[K
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/NMEA2000_node.hpp:92:51:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%ld[m[K’ expects argument of type ‘[01m[Klong int[m[K’, but argument 3 has type ‘[01m[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >::_nanosec_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+   92 |                 printf("Timestamp: %ld seconds, [01;35m[K%ld[m[K nanoseconds\n", msg.header.stamp.sec, [32m[Kmsg.header.stamp.nanosec[m[K);
+      |                                                 [01;35m[K~~^[m[K                                       [32m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                   [01;35m[K|[m[K                                                        [32m[K|[m[K
+      |                                                   [01;35m[Klong int[m[K                                                 [32m[Kbuiltin_interfaces::msg::Time_<std::allocator<void> >::_nanosec_type {aka unsigned int}[m[K
+      |                                                 [32m[K%d[m[K
+In file included from [01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/can_cpp_node.cpp:32[m[K:
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/NMEA2000_node.hpp:[m[K In member function ‘[01m[Kvoid NMEA2000Parser::Parse_PositionRapidUpdate(uint8_t*, std_msgs::msg::Header)[m[K’:
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/NMEA2000_node.hpp:277:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstamp[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  277 |   void Parse_PositionRapidUpdate(uint8_t*  data, [01;35m[Kstd_msgs::msg::Header stamp[m[K) {
+      |                                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/NMEA2000_node.hpp:[m[K In member function ‘[01m[Kvoid NMEA2000Parser::Parse_GNSS_PseudoNoiseStats(FastPacketData*, std_msgs::msg::Header)[m[K’:
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/NMEA2000_node.hpp:293:89:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstamp[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  293 | SS_PseudoNoiseStats(struct FastPacketData *data, [01;35m[Kstd_msgs::msg::Header stamp[m[K) {
+      |                                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/NMEA2000_node.hpp:[m[K In member function ‘[01m[Kvoid NMEA2000Parser::Parse_COG_SOG_RapidUpdate(uint8_t*, std_msgs::msg::Header)[m[K’:
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/NMEA2000_node.hpp:311:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstamp[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  311 |    void Parse_COG_SOG_RapidUpdate(uint8_t* data, [01;35m[Kstd_msgs::msg::Header stamp[m[K) {
+      |                                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/can_cpp_node.cpp:[m[K In member function ‘[01m[Kbool Can::processReceivedFrames(CanFrame&)[m[K’:
+[01m[K/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/can_cpp_node.cpp:116:16:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Klong int[m[K’ and ‘[01m[Klong unsigned int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  116 |     if ([01;35m[Knbytes < sizeof(struct can_frame)[m[K) {
+      |         [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K

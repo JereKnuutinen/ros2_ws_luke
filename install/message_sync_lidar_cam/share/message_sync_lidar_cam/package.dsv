@@ -1,0 +1,8 @@
+source;share/message_sync_lidar_cam/hook/cmake_prefix_path.ps1
+source;share/message_sync_lidar_cam/hook/cmake_prefix_path.dsv
+source;share/message_sync_lidar_cam/hook/cmake_prefix_path.sh
+source;share/message_sync_lidar_cam/local_setup.bash
+source;share/message_sync_lidar_cam/local_setup.dsv
+source;share/message_sync_lidar_cam/local_setup.ps1
+source;share/message_sync_lidar_cam/local_setup.sh
+source;share/message_sync_lidar_cam/local_setup.zsh

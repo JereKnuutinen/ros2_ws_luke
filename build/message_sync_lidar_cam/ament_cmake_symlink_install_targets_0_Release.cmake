@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mlemsalu/ros2_ws_luke/build/message_sync_lidar_cam/sync_node_lidar_cam" "TARGETS" "sync_node_lidar_cam" "DESTINATION" "lib/message_sync_lidar_cam")

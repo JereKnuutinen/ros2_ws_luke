@@ -1,0 +1,4 @@
+sensor_msgs/Image synced_img
+sensor_msgs/PointCloud2 synced_pc_lidar
+nav_msgs/Odometry synced_odom_cam
+geometry_msgs/PoseStamped synced_cam_pose

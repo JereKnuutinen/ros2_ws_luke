@@ -1,0 +1,19 @@
+/synced_img:
+  durability: volatile
+  history: keep_all
+  reliability: reliable
+
+/synced_pc_lidar:
+  durability: volatile
+  history: keep_all
+  reliability: reliable
+  
+/synced_odom_cam:
+  durability: volatile
+  history: keep_all
+  reliability: reliable
+
+/synced_cam_pose:
+  durability: volatile
+  history: keep_all
+  reliability: reliable

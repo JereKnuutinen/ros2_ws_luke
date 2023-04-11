@@ -1,0 +1,2 @@
+source;share/message_sync_lidar_cam/environment/ament_prefix_path.sh
+source;share/message_sync_lidar_cam/environment/path.sh

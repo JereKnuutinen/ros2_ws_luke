@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/Isobus.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module custom_msgs {
+  module msg {
+    typedef uint8 uint8__8[8];
+    struct Isobus {
+      std_msgs::msg::Header header;
+
+      uint8 priority;
+
+      boolean page;
+
+      uint16 pgn;
+
+      uint8 sa;
+
+      uint8 pf;
+
+      uint8 ps;
+
+      uint8__8 data;
+    };
+  };
+};

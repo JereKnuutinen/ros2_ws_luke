@@ -1,0 +1,3 @@
+[console_scripts]
+sync_msg = message_sync_python.sync_msg:main
+

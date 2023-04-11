@@ -1,0 +1,188 @@
+[0.035s] Invoking command in '/home/mlemsalu/ros2_ws_luke/build/zstd_vendor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/zstd_vendor -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/install/zstd_vendor
+[0.182s] -- The C compiler identification is GNU 9.4.0
+[0.288s] -- The CXX compiler identification is GNU 9.4.0
+[0.295s] -- Check for working C compiler: /usr/bin/cc
+[0.377s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.378s] -- Detecting C compiler ABI info
+[0.453s] -- Detecting C compiler ABI info - done
+[0.470s] -- Detecting C compile features
+[0.471s] -- Detecting C compile features - done
+[0.473s] -- Check for working CXX compiler: /usr/bin/c++
+[0.553s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.554s] -- Detecting CXX compiler ABI info
+[0.648s] -- Detecting CXX compiler ABI info - done
+[0.658s] -- Detecting CXX compile features
+[0.658s] -- Detecting CXX compile features - done
+[0.660s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.679s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.680s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.897s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.008s] -- Configuring done
+[1.011s] -- Generating done
+[1.012s] -- Build files have been written to: /home/mlemsalu/ros2_ws_luke/build/zstd_vendor
+[1.026s] Invoked command in '/home/mlemsalu/ros2_ws_luke/build/zstd_vendor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/zstd_vendor -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/install/zstd_vendor
+[1.028s] Invoking command in '/home/mlemsalu/ros2_ws_luke/build/zstd_vendor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mlemsalu/ros2_ws_luke/build/zstd_vendor -- -j12 -l12
+[1.067s] [35m[1mScanning dependencies of target zstd-1.4.4[0m
+[1.078s] [ 12%] [34m[1mCreating directories for 'zstd-1.4.4'[0m
+[1.156s] [ 25%] [34m[1mPerforming download step (download, verify and extract) for 'zstd-1.4.4'[0m
+[1.164s] -- Downloading...
+[1.164s]    dst='/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/v1.4.4.zip'
+[1.164s]    timeout='60 seconds'
+[1.164s] -- Using src='https://github.com/facebook/zstd/archive/v1.4.4.zip'
+[2.008s] -- verifying file...
+[2.009s]        file='/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/v1.4.4.zip'
+[2.012s] -- Downloading... done
+[2.029s] -- extracting...
+[2.029s]      src='/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/v1.4.4.zip'
+[2.029s]      dst='/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4'
+[2.029s] -- extracting... [tar xfz]
+[2.093s] -- extracting... [analysis]
+[2.093s] -- extracting... [rename]
+[2.094s] -- extracting... [clean up]
+[2.094s] -- extracting... done
+[2.110s] [ 50%] [34m[1mPerforming patch step for 'zstd-1.4.4'[0m
+[2.110s] [ 50%] [34m[1mNo update step for 'zstd-1.4.4'[0m
+[2.112s] patching file build/cmake/CMakeLists.txt
+[2.113s] patching file build/cmake/lib/CMakeLists.txt
+[2.140s] [ 62%] [34m[1mPerforming configure step for 'zstd-1.4.4'[0m
+[2.207s] -- The C compiler identification is GNU 9.4.0
+[2.286s] -- The CXX compiler identification is GNU 9.4.0
+[2.290s] -- Check for working C compiler: /usr/bin/cc
+[2.365s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.366s] -- Detecting C compiler ABI info
+[2.469s] -- Detecting C compiler ABI info - done
+[2.492s] -- Detecting C compile features
+[2.492s] -- Detecting C compile features - done
+[2.495s] -- Check for working CXX compiler: /usr/bin/c++
+[2.603s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.603s] -- Detecting CXX compiler ABI info
+[2.720s] -- Detecting CXX compiler ABI info - done
+[2.744s] -- Detecting CXX compile features
+[2.744s] -- Detecting CXX compile features - done
+[2.745s] -- ZSTD VERSION: 1.4.4
+[2.756s] -- Performing Test CXX_FLAG_STD_CPLUSPLUS11
+[3.040s] -- Performing Test CXX_FLAG_STD_CPLUSPLUS11 - Success
+[3.041s] -- Performing Test C_FLAG_STD_C99
+[3.179s] -- Performing Test C_FLAG_STD_C99 - Success
+[3.181s] -- Performing Test C_FLAG_WALL
+[3.265s] -- Performing Test C_FLAG_WALL - Success
+[3.266s] -- Performing Test CXX_FLAG_WALL
+[3.366s] -- Performing Test CXX_FLAG_WALL - Success
+[3.367s] -- Performing Test C_FLAG_WEXTRA
+[3.442s] -- Performing Test C_FLAG_WEXTRA - Success
+[3.443s] -- Performing Test CXX_FLAG_WEXTRA
+[3.523s] -- Performing Test CXX_FLAG_WEXTRA - Success
+[3.524s] -- Performing Test C_FLAG_WUNDEF
+[3.597s] -- Performing Test C_FLAG_WUNDEF - Success
+[3.598s] -- Performing Test CXX_FLAG_WUNDEF
+[3.685s] -- Performing Test CXX_FLAG_WUNDEF - Success
+[3.686s] -- Performing Test C_FLAG_WSHADOW
+[3.755s] -- Performing Test C_FLAG_WSHADOW - Success
+[3.756s] -- Performing Test CXX_FLAG_WSHADOW
+[3.833s] -- Performing Test CXX_FLAG_WSHADOW - Success
+[3.834s] -- Performing Test C_FLAG_WCAST_ALIGN
+[3.909s] -- Performing Test C_FLAG_WCAST_ALIGN - Success
+[3.910s] -- Performing Test CXX_FLAG_WCAST_ALIGN
+[4.005s] -- Performing Test CXX_FLAG_WCAST_ALIGN - Success
+[4.006s] -- Performing Test C_FLAG_WCAST_QUAL
+[4.082s] -- Performing Test C_FLAG_WCAST_QUAL - Success
+[4.083s] -- Performing Test CXX_FLAG_WCAST_QUAL
+[4.181s] -- Performing Test CXX_FLAG_WCAST_QUAL - Success
+[4.182s] -- Performing Test C_FLAG_WSTRICT_PROTOTYPES
+[4.349s] -- Performing Test C_FLAG_WSTRICT_PROTOTYPES - Success
+[4.349s] -- CMAKE_INSTALL_PREFIX: /home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd_vendor_install
+[4.349s] -- CMAKE_INSTALL_LIBDIR: lib
+[4.350s] -- ZSTD_LEGACY_SUPPORT not defined!
+[4.350s] -- ZSTD_MULTITHREAD_SUPPORT is enabled
+[4.352s] -- Looking for pthread.h
+[4.529s] -- Looking for pthread.h - found
+[4.529s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.771s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[4.771s] -- Check if compiler accepts -pthread
+[4.964s] -- Check if compiler accepts -pthread - yes
+[4.965s] -- Found Threads: TRUE  
+[4.970s] -- Configuring done
+[5.010s] -- Generating done
+[5.011s] -- Build files have been written to: /home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4-build
+[5.093s] [ 75%] [34m[1mPerforming build step for 'zstd-1.4.4'[0m
+[5.277s] [35m[1mScanning dependencies of target libzstd.pc[0m
+[5.289s] [35m[1mScanning dependencies of target libzstd_shared[0m
+[5.365s] [  3%] [34m[1mCreating pkg-config file[0m
+[5.413s] [  6%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/common/debug.c.o[0m
+[5.448s] [  9%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/common/error_private.c.o[0m
+[5.451s] [ 12%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/common/entropy_common.c.o[0m
+[5.461s] [ 15%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/common/fse_decompress.c.o[0m
+[5.492s] [ 15%] Built target libzstd.pc
+[5.507s] [ 18%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/common/pool.c.o[0m
+[5.605s] [ 21%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/common/xxhash.c.o[0m
+[5.607s] [ 24%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/common/zstd_common.c.o[0m
+[5.616s] [ 27%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/common/threading.c.o[0m
+[5.640s] [ 30%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/compress/fse_compress.c.o[0m
+[5.644s] [ 33%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/compress/hist.c.o[0m
+[5.664s] [ 36%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/compress/huf_compress.c.o[0m
+[5.829s] [ 39%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/compress/zstd_compress.c.o[0m
+[5.833s] [ 42%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/compress/zstd_compress_literals.c.o[0m
+[5.840s] [ 45%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/compress/zstd_compress_sequences.c.o[0m
+[5.845s] [ 48%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/compress/zstd_double_fast.c.o[0m
+[5.856s] [ 51%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/compress/zstd_fast.c.o[0m
+[6.016s] [ 54%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/compress/zstd_lazy.c.o[0m
+[6.067s] [ 57%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/compress/zstd_ldm.c.o[0m
+[6.118s] [ 60%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/compress/zstd_opt.c.o[0m
+[6.153s] [ 63%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/compress/zstdmt_compress.c.o[0m
+[6.386s] [ 66%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/decompress/huf_decompress.c.o[0m
+[6.400s] [ 69%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/decompress/zstd_ddict.c.o[0m
+[6.472s] [ 72%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/decompress/zstd_decompress.c.o[0m
+[6.573s] [ 75%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/decompress/zstd_decompress_block.c.o[0m
+[6.596s] [ 78%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/dictBuilder/cover.c.o[0m
+[6.629s] [ 81%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/dictBuilder/divsufsort.c.o[0m
+[6.896s] [ 84%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/dictBuilder/fastcover.c.o[0m
+[7.730s] [ 87%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/dictBuilder/zdict.c.o[0m
+[7.747s] [ 90%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/deprecated/zbuff_common.c.o[0m
+[7.812s] [ 93%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/deprecated/zbuff_compress.c.o[0m
+[7.964s] [ 96%] [32mBuilding C object lib/CMakeFiles/libzstd_shared.dir/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd-1.4.4-prefix/src/zstd-1.4.4/lib/deprecated/zbuff_decompress.c.o[0m
+[21.972s] [100%] [32m[1mLinking C shared library libzstd.so[0m
+[22.076s] [100%] Built target libzstd_shared
+[22.120s] [ 87%] [34m[1mPerforming install step for 'zstd-1.4.4'[0m
+[22.187s] [  3%] [34m[1mCreating pkg-config file[0m
+[22.197s] [100%] Built target libzstd_shared
+[22.217s] [100%] Built target libzstd.pc
+[22.247s] [36mInstall the project...[0m
+[22.261s] -- Install configuration: "Release"
+[22.262s] -- Installing: /home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd_vendor_install/lib/pkgconfig/libzstd.pc
+[22.262s] -- Installing: /home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd_vendor_install/include/zstd.h
+[22.263s] -- Installing: /home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd_vendor_install/lib/libzstd.so.1.4.4
+[22.264s] -- Installing: /home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd_vendor_install/lib/libzstd.so.1
+[22.264s] -- Installing: /home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd_vendor_install/lib/libzstd.so
+[22.294s] [100%] [34m[1mCompleted 'zstd-1.4.4'[0m
+[22.349s] [100%] Built target zstd-1.4.4
+[22.367s] Invoked command in '/home/mlemsalu/ros2_ws_luke/build/zstd_vendor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mlemsalu/ros2_ws_luke/build/zstd_vendor -- -j12 -l12
+[22.404s] Invoking command in '/home/mlemsalu/ros2_ws_luke/build/zstd_vendor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mlemsalu/ros2_ws_luke/build/zstd_vendor
+[22.418s] -- Install configuration: "Release"
+[22.419s] -- Execute custom install script
+[22.420s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/zstd_vendor/cmake/Modules/Findzstd.cmake
+[22.434s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/ament_index/resource_index/package_run_dependencies/zstd_vendor
+[22.449s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/ament_index/resource_index/parent_prefix_path/zstd_vendor
+[22.464s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/zstd_vendor/environment/ament_prefix_path.sh
+[22.479s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/zstd_vendor/environment/ament_prefix_path.dsv
+[22.494s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/zstd_vendor/environment/path.sh
+[22.509s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/zstd_vendor/environment/path.dsv
+[22.524s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/zstd_vendor/local_setup.bash
+[22.539s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/zstd_vendor/local_setup.sh
+[22.554s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/zstd_vendor/local_setup.zsh
+[22.570s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/zstd_vendor/local_setup.dsv
+[22.584s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/zstd_vendor/package.dsv
+[22.600s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/ament_index/resource_index/packages/zstd_vendor
+[22.615s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/zstd_vendor/cmake/zstd_vendor-extras.cmake
+[22.630s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/zstd_vendor/cmake/zstd_vendorConfig.cmake
+[22.645s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/zstd_vendor/cmake/zstd_vendorConfig-version.cmake
+[22.659s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/share/zstd_vendor/package.xml
+[22.674s] -- Up-to-date: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor
+[22.674s] -- Installing: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/include
+[22.675s] -- Installing: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/include/zstd.h
+[22.675s] -- Installing: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/lib
+[22.675s] -- Installing: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/lib/pkgconfig
+[22.675s] -- Installing: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/lib/pkgconfig/libzstd.pc
+[22.675s] -- Installing: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/lib/libzstd.so
+[22.675s] -- Installing: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/lib/libzstd.so.1
+[22.675s] -- Installing: /home/mlemsalu/ros2_ws_luke/install/zstd_vendor/lib/libzstd.so.1.4.4
+[22.684s] Invoked command in '/home/mlemsalu/ros2_ws_luke/build/zstd_vendor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mlemsalu/ros2_ws_luke/build/zstd_vendor

@@ -1,0 +1,47 @@
+[0.040s] Invoking command in '/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/sqlite3_vendor -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor
+[0.204s] -- The C compiler identification is GNU 9.4.0
+[0.314s] -- The CXX compiler identification is GNU 9.4.0
+[0.318s] -- Check for working C compiler: /usr/bin/cc
+[0.391s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.392s] -- Detecting C compiler ABI info
+[0.466s] -- Detecting C compiler ABI info - done
+[0.485s] -- Detecting C compile features
+[0.485s] -- Detecting C compile features - done
+[0.489s] -- Check for working CXX compiler: /usr/bin/c++
+[0.588s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.589s] -- Detecting CXX compiler ABI info
+[0.679s] -- Detecting CXX compiler ABI info - done
+[0.689s] -- Detecting CXX compile features
+[0.690s] -- Detecting CXX compile features - done
+[0.691s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.716s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.717s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.865s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.892s] -- Found SQLite3. Using SQLite3 from system.
+[0.948s] -- Configuring done
+[0.950s] -- Generating done
+[0.951s] -- Build files have been written to: /home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor
+[0.955s] Invoked command in '/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/sqlite3_vendor -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor
+[0.958s] Invoking command in '/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor -- -j12 -l12
+[0.998s] Invoked command in '/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor -- -j12 -l12
+[1.037s] Invoking command in '/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor
+[1.046s] -- Install configuration: "Release"
+[1.049s] -- Execute custom install script
+[1.049s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/sqlite3_vendor/cmake/Modules/FindSQLite3.cmake
+[1.057s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/ament_index/resource_index/package_run_dependencies/sqlite3_vendor
+[1.065s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/ament_index/resource_index/parent_prefix_path/sqlite3_vendor
+[1.073s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/sqlite3_vendor/environment/ament_prefix_path.sh
+[1.080s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/sqlite3_vendor/environment/ament_prefix_path.dsv
+[1.088s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/sqlite3_vendor/environment/path.sh
+[1.096s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/sqlite3_vendor/environment/path.dsv
+[1.104s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/sqlite3_vendor/local_setup.bash
+[1.114s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/sqlite3_vendor/local_setup.sh
+[1.123s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/sqlite3_vendor/local_setup.zsh
+[1.133s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/sqlite3_vendor/local_setup.dsv
+[1.142s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/sqlite3_vendor/package.dsv
+[1.151s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/ament_index/resource_index/packages/sqlite3_vendor
+[1.159s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/sqlite3_vendor/cmake/sqlite3_vendor-extras.cmake
+[1.169s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/sqlite3_vendor/cmake/sqlite3_vendorConfig.cmake
+[1.180s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/sqlite3_vendor/cmake/sqlite3_vendorConfig-version.cmake
+[1.187s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/sqlite3_vendor/share/sqlite3_vendor/package.xml
+[1.197s] Invoked command in '/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor

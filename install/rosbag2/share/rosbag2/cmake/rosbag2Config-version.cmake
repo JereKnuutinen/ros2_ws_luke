@@ -1,0 +1,1 @@
+/home/mlemsalu/ros2_ws_luke/build/rosbag2/ament_cmake_core/rosbag2Config-version.cmake

@@ -1,0 +1,30 @@
+running develop
+Removing /home/mlemsalu/ros2_ws_luke/install/message_sync_python/lib/python3.8/site-packages/message-sync-python.egg-link (link to .)
+running egg_info
+writing ../../build/message_sync_python/message_sync_python.egg-info/PKG-INFO
+writing dependency_links to ../../build/message_sync_python/message_sync_python.egg-info/dependency_links.txt
+writing entry points to ../../build/message_sync_python/message_sync_python.egg-info/entry_points.txt
+writing requirements to ../../build/message_sync_python/message_sync_python.egg-info/requires.txt
+writing top-level names to ../../build/message_sync_python/message_sync_python.egg-info/top_level.txt
+reading manifest file '../../build/message_sync_python/message_sync_python.egg-info/SOURCES.txt'
+writing manifest file '../../build/message_sync_python/message_sync_python.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/mlemsalu/ros2_ws_luke/build/message_sync_python/build
+creating /home/mlemsalu/ros2_ws_luke/build/message_sync_python/build/lib
+creating /home/mlemsalu/ros2_ws_luke/build/message_sync_python/build/lib/message_sync_python
+copying message_sync_python/sync_msg.py -> /home/mlemsalu/ros2_ws_luke/build/message_sync_python/build/lib/message_sync_python
+copying message_sync_python/__init__.py -> /home/mlemsalu/ros2_ws_luke/build/message_sync_python/build/lib/message_sync_python
+running install
+running install_lib
+creating /home/mlemsalu/ros2_ws_luke/install/message_sync_python/lib/python3.8/site-packages/message_sync_python
+copying /home/mlemsalu/ros2_ws_luke/build/message_sync_python/build/lib/message_sync_python/sync_msg.py -> /home/mlemsalu/ros2_ws_luke/install/message_sync_python/lib/python3.8/site-packages/message_sync_python
+copying /home/mlemsalu/ros2_ws_luke/build/message_sync_python/build/lib/message_sync_python/__init__.py -> /home/mlemsalu/ros2_ws_luke/install/message_sync_python/lib/python3.8/site-packages/message_sync_python
+byte-compiling /home/mlemsalu/ros2_ws_luke/install/message_sync_python/lib/python3.8/site-packages/message_sync_python/sync_msg.py to sync_msg.cpython-38.pyc
+byte-compiling /home/mlemsalu/ros2_ws_luke/install/message_sync_python/lib/python3.8/site-packages/message_sync_python/__init__.py to __init__.cpython-38.pyc
+running install_data
+running install_egg_info
+Copying ../../build/message_sync_python/message_sync_python.egg-info to /home/mlemsalu/ros2_ws_luke/install/message_sync_python/lib/python3.8/site-packages/message_sync_python-0.0.0-py3.8.egg-info
+running install_scripts
+Installing sync_msg script to /home/mlemsalu/ros2_ws_luke/install/message_sync_python/lib/message_sync_python
+writing list of installed files to '/home/mlemsalu/ros2_ws_luke/build/message_sync_python/install.log'

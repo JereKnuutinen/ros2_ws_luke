@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mlemsalu/ros2_ws_luke/build/rosbag2_cpp/libconverter_test_plugins.so" "TARGETS" "converter_test_plugins" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

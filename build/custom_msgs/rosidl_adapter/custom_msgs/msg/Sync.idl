@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/Sync.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/PoseStamped.idl"
+#include "nav_msgs/msg/Odometry.idl"
+#include "sensor_msgs/msg/Image.idl"
+#include "sensor_msgs/msg/PointCloud2.idl"
+
+module custom_msgs {
+  module msg {
+    struct Sync {
+      sensor_msgs::msg::Image synced_img;
+
+      sensor_msgs::msg::PointCloud2 synced_pc_lidar;
+
+      nav_msgs::msg::Odometry synced_odom_cam;
+
+      geometry_msgs::msg::PoseStamped synced_cam_pose;
+    };
+  };
+};

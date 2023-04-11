@@ -1,0 +1,4 @@
+source;share/message_sync_lidar_cam/local_setup.bash
+source;share/message_sync_lidar_cam/local_setup.dsv
+source;share/message_sync_lidar_cam/local_setup.sh
+source;share/message_sync_lidar_cam/local_setup.zsh

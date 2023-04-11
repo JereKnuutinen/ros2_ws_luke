@@ -1,0 +1,97 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_index_cpp: 1.1.0 (/opt/ros/foxy/share/ament_index_cpp/cmake)
+-- Found pluginlib: 2.5.4 (/opt/ros/foxy/share/pluginlib/cmake)
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rosbag2_storage: 0.7.0 (/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage/share/rosbag2_storage/cmake)
+-- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+-- Found ament_cmake_gmock: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gmock/cmake)
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Found test_msgs: 1.0.0 (/opt/ros/foxy/share/test_msgs/cmake)
+-- Found gmock sources under '/opt/ros/foxy/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+-- Found ament_cmake_gtest: 0.9.11 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/rosbag2_cpp/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mlemsalu/ros2_ws_luke/build/rosbag2_cpp
+[ 11%] Built target gmock_main
+[ 11%] Built target gmock
+[ 45%] Built target rosbag2_cpp
+[ 54%] Built target test_ros2_message
+[ 59%] Built target test_info
+[ 66%] Built target converter_test_plugins
+[ 71%] Built target test_sequential_writer
+[ 80%] Built target test_sequential_reader
+[ 80%] Built target test_storage_without_metadata_file
+[ 85%] Built target test_typesupport_helpers
+[ 90%] Built target test_converter_factory
+[ 95%] Built target test_message_cache
+[100%] Built target test_multifile_reader
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/cache/cache_consumer.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/cache/message_cache.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/cache/message_cache_buffer.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/converter.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/converter_interfaces/serialization_format_converter.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/converter_interfaces/serialization_format_deserializer.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/converter_interfaces/serialization_format_serializer.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/converter_options.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/info.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/logging.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/reader.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/reader_interfaces/base_reader_interface.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/readers/sequential_reader.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/serialization_format_converter_factory.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/serialization_format_converter_factory_interface.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/storage_options.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/types.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/types/introspection_message.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/typesupport_helpers.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/visibility_control.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/writer.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/writer_interfaces/base_writer_interface.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/include/rosbag2_cpp/writers/sequential_writer.hpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/environment/library_path.sh
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/environment/library_path.dsv
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/lib/libconverter_test_plugins.so
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/test/rosbag2_cpp/converter_test_plugin.xml
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/ament_index/resource_index/package_run_dependencies/rosbag2_cpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/ament_index/resource_index/parent_prefix_path/rosbag2_cpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/environment/path.sh
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/environment/path.dsv
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/local_setup.bash
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/local_setup.sh
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/local_setup.zsh
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/local_setup.dsv
+-- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/package.dsv
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/ament_index/resource_index/packages/rosbag2_cpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/ament_index/resource_index/rosbag2_cpp__pluginlib__plugin/rosbag2_cpp
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/cmake/rosbag2_cppConfig.cmake
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/cmake/rosbag2_cppConfig-version.cmake
+-- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/package.xml
+-- Up-to-date: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/lib/librosbag2_cpp.so
+-- Up-to-date: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/cmake/export_rosbag2_cppExport.cmake
+-- Installing: /home/mlemsalu/ros2_ws_luke/install/rosbag2_cpp/share/rosbag2_cpp/cmake/export_rosbag2_cppExport-release.cmake

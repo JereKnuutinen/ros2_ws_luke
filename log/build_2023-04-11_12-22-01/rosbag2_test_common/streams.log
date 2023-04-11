@@ -1,0 +1,58 @@
+[0.037s] Invoking command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/rosbag2_test_common -DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common
+[0.062s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.077s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.224s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.231s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.260s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.263s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.395s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.457s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.458s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.613s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.667s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.668s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.668s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/rosbag2_test_common/include>
+[0.668s] -- Configured cppcheck exclude dirs and/or files: 
+[0.669s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.669s] -- Configured cpplint exclude dirs and/or files: 
+[0.670s] -- Added test 'lint_cmake' to check CMake code style
+[0.670s] -- Added test 'uncrustify' to check C / C++ code style
+[0.671s] -- Configured uncrustify additional arguments: 
+[0.671s] -- Added test 'xmllint' to check XML markup files
+[0.675s] -- Configuring done
+[0.677s] -- Generating done
+[0.678s] -- Build files have been written to: /home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common
+[0.683s] Invoked command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/rosbag2_test_common -DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common
+[0.685s] Invoking command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common -- -j12 -l12
+[0.719s] Invoked command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common -- -j12 -l12
+[0.739s] Invoking command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common
+[0.746s] -- Install configuration: "Release"
+[0.747s] -- Execute custom install script
+[0.747s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/include/rosbag2_test_common/memory_management.hpp
+[0.747s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/include/rosbag2_test_common/process_execution_helpers.hpp
+[0.747s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/include/rosbag2_test_common/process_execution_helpers_unix.hpp
+[0.748s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/include/rosbag2_test_common/process_execution_helpers_windows.hpp
+[0.748s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/include/rosbag2_test_common/publisher_manager.hpp
+[0.748s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/include/rosbag2_test_common/subscription_manager.hpp
+[0.748s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/include/rosbag2_test_common/temporary_directory_fixture.hpp
+[0.748s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/include/rosbag2_test_common/wait_for.hpp
+[0.748s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/ament_index/resource_index/package_run_dependencies/rosbag2_test_common
+[0.749s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/ament_index/resource_index/parent_prefix_path/rosbag2_test_common
+[0.749s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/environment/ament_prefix_path.sh
+[0.749s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/environment/ament_prefix_path.dsv
+[0.750s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/environment/path.sh
+[0.750s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/environment/path.dsv
+[0.750s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/local_setup.bash
+[0.750s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/local_setup.sh
+[0.751s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/local_setup.zsh
+[0.751s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/local_setup.dsv
+[0.751s] -- Symlinking: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/package.dsv
+[0.761s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/ament_index/resource_index/packages/rosbag2_test_common
+[0.762s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.762s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.762s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/cmake/ament_cmake_export_targets-extras.cmake
+[0.762s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/cmake/rosbag2_test_commonConfig.cmake
+[0.763s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/cmake/rosbag2_test_commonConfig-version.cmake
+[0.763s] -- Up-to-date symlink: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/package.xml
+[0.763s] -- Up-to-date: /home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common/share/rosbag2_test_common/cmake/export_rosbag2_test_commonExport.cmake
+[0.767s] Invoked command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common

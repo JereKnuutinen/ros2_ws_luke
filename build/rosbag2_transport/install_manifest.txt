@@ -1,0 +1,3 @@
+/home/mlemsalu/ros2_ws_luke/install/rosbag2_transport/lib/librosbag2_transport.so
+/home/mlemsalu/ros2_ws_luke/install/rosbag2_transport/share/rosbag2_transport/cmake/export_rosbag2_transportExport.cmake
+/home/mlemsalu/ros2_ws_luke/install/rosbag2_transport/share/rosbag2_transport/cmake/export_rosbag2_transportExport-release.cmake
