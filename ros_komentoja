@@ -1,0 +1,28 @@
+# ROS komennot
+
+# Sourceta
+source /opt/ros/foxy/setup.bash
+
+# Install
+. install/setup.bash
+
+# Aja zed
+ros2 launch zed_wrapper zed2.launch.py
+
+# Aja lidarit
+ros2 launch velodyne launch.py
+
+# Aja sync node
+ros2 run message_sync_python sync_msg
+
+# Rosbag record
+ros2 bag record /synced_pc_lidar_1 /synced_pc_lidar_2 /synced_odom_cam /synced_odom_cam -o ROSBAGS/BAGIN_NIMI
+
+# Reset tracking zed
+ros2 service call /zed2/zed_node/reset_pos_tracking std_srvs/srv/Trigger
+
+# base linkistä left kameraan
+ros2 run tf2_ros tf2_echo base_link zed2_left_camera_frame
+
+# Lidarin visualizointiin
+ros2 run tf2_ros static_transform_publisher "0" "0" "0" "0" "0" "0" "map" "velodyne1"

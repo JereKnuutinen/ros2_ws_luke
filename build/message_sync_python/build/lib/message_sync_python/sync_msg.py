@@ -1,10 +1,10 @@
 import rclpy
 from rclpy.node import Node
 from rclpy.serialization import serialize_message
-import cv2
+#import cv2
 import numpy as np
 import os
-import open3d as o3d
+#import open3d as o3d
 
 from rclpy.qos import qos_profile_sensor_data
 from message_filters import ApproximateTimeSynchronizer, Subscriber
@@ -27,20 +27,18 @@ class ExampleNode(Node):
         super().__init__("ExampleNode")
 
 
-        #self.image_sub = Subscriber(self, Image, "/zed2/zed_node/left/image_rect_color", qos_profile=qos_profile_sensor_data)
-        
+        self.image_sub = Subscriber(self, Image, "/zed2/zed_node/left/image_rect_color", qos_profile=qos_profile_sensor_data)
         # Subscribers for velodyne pointcloud
         self.plc_sub_1 = Subscriber(self, PointCloud2, "/lidar_right/velodyne_points", qos_profile=qos_profile_sensor_data)
         self.plc_sub_2 = Subscriber(self, PointCloud2, "/lidar_left/velodyne_points", qos_profile=qos_profile_sensor_data)
         
-        
-        # Subscribers for camera odom data
+         # Subscribers for camera odom data
         self.odom_sub_cam = Subscriber(self, Odometry, "/zed2/zed_node/odom", qos_profile=qos_profile_sensor_data)
         self.cam_info_sub = Subscriber(self, CameraInfo, "/zed2/zed_node/left/camera_info", qos_profile=qos_profile_sensor_data)
         self.pose_sub_cam = Subscriber(self, PoseStamped, "/zed2/zed_node/pose", qos_profile=qos_profile_sensor_data)
         
         
-        #self.image_pub = self.create_publisher(Image, 'synced_img', 10)
+        self.image_pub = self.create_publisher(Image, 'synced_img', 10)
         self.pcl_pub_1 = self.create_publisher(PointCloud2, 'synced_pc_lidar_1', 10)
         self.pcl_pub_2 = self.create_publisher(PointCloud2, 'synced_pc_lidar_2', 10)
 
@@ -52,13 +50,13 @@ class ExampleNode(Node):
         queue_size = 10
         # you can use ApproximateTimeSynchronizer if msgs dont have exactly the same timestamp
         self.ts = ApproximateTimeSynchronizer(
-            [self.plc_sub_1, self.plc_sub_2, self.odom_sub_cam, self.pose_sub_cam],
+            [self.image_sub, self.plc_sub_1, self.plc_sub_2, self.odom_sub_cam, self.pose_sub_cam],
             queue_size,
             0.05,  # defines the delay (in seconds) with which messages can be synchronized
         )
         self.ts.registerCallback(self.callback)
 
-    def callback(self, pcl_msg_1, pcl_msg_2, odom_msgs_cam, pose_msgs):
+    def callback(self, image_msg, pcl_msg_1, pcl_msg_2, odom_msgs_cam, pose_msgs):
         # Save the image
         # img = np.frombuffer(image_msg.data, np.uint8).reshape(image_msg.height, image_msg.width, -1)
         # img_file = os.path.join(img_dir, '{}.jpg'.format(image_msg.header.stamp))
@@ -73,7 +71,7 @@ class ExampleNode(Node):
         # pcd_file = os.path.join(pcl_dir, '{}.pcd'.format(pcl_msg.header.stamp))
         # o3d.io.write_point_cloud(pcd_file, pcd)
         
-        #self.image_pub.publish(image_msg)
+        self.image_pub.publish(image_msg)
         # Publish syncronized messages for rosbag
         self.pcl_pub_1.publish(pcl_msg_1)
         self.pcl_pub_2.publish(pcl_msg_2)

@@ -48,7 +48,7 @@ public:
         //memcpy(data, payload, size);
         for(int i=0;i<size;i++) {
             data[i] = (uint8_t)payload[i];
-            std::cout << "data[" << i << "] = " << static_cast<int>(data[i]) << std::endl;
+            //std::cout << "data[" << i << "] = " << static_cast<int>(data[i]) << std::endl;
         }
 
         //std::cout << "DATA: " << data << std::endl;

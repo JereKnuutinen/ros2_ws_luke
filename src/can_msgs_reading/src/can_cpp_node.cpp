@@ -50,16 +50,17 @@ class Can : public rclcpp::Node {
   bool init(const std::string& dev) {
     m_socket = socket(PF_CAN, SOCK_RAW, CAN_RAW);
     if (m_socket < 0) {
+      std::cout << "eka error" << std::endl;
       perror("Failed to create CAN socket");
       return false;
     }
 
-    const char* cmd = "sudo ip link set vcan0 type can bitrate 250000";
-    int ret = system(cmd);
-    if (ret == -1) {
-      perror("Failed to set bitrate");
-      return false;
-    }
+    // const char* cmd = "sudo ip link set vcan0 type can bitrate 250000";
+    // int ret = system(cmd);
+    // if (ret == -1) {
+    //   perror("Failed to set bitrate");
+    //   return false;
+    // }
 
     struct sockaddr_can addr;
     struct ifreq ifr;
@@ -67,6 +68,8 @@ class Can : public rclcpp::Node {
     std::strcpy(ifr.ifr_name, dev.c_str());
 
     if (ioctl(m_socket, SIOCGIFINDEX, &ifr) == -1) {
+      std::cout << "toka error" << std::endl;
+
       perror("Failed to get CAN interface index");
       close(m_socket);
       return false;
@@ -75,6 +78,8 @@ class Can : public rclcpp::Node {
     addr.can_family = AF_CAN;
     addr.can_ifindex = ifr.ifr_ifindex;
     if (bind(m_socket, reinterpret_cast<struct sockaddr*>(&addr), sizeof(addr)) == -1) {
+            std::cout << "kolmas error" << std::endl;
+
       perror("Failed to bind CAN socket to interface");
       close(m_socket);
       return false;
@@ -100,20 +105,24 @@ class Can : public rclcpp::Node {
     /* get interface name of the received CAN frame */
     ifr.ifr_ifindex = addr.can_ifindex;
     ioctl(m_socket, SIOCGIFNAME, &ifr);
-    printf("Received a CAN frame from interface %s", ifr.ifr_name);
+    //printf("Received a CAN frame from interface %s", ifr.ifr_name);
 
     struct timeval tv;
     ioctl(m_socket, SIOCGSTAMP, &tv);
-    printf("Timestamp can: %ld seconds, %ld microseconds\n", tv.tv_sec, tv.tv_usec);
-    RCLCPP_INFO_STREAM(get_logger(), "  rclcpp::Clock{RCL_SYSTEM_TIME}.now() sec: " << rclcpp::Clock{RCL_SYSTEM_TIME}.now().seconds());  // Get the current time using rclcpp::Clock
-    RCLCPP_INFO_STREAM(get_logger(), "  rclcpp::Clock{RCL_SYSTEM_TIME}.now() nao: " << rclcpp::Clock{RCL_SYSTEM_TIME}.now().nanoseconds());  // Get the current time using rclcpp::Clock
+    //printf("Timestamp can: %ld seconds, %ld microseconds\n", tv.tv_sec, tv.tv_usec);
+    //RCLCPP_INFO_STREAM(get_logger(), "  rclcpp::Clock{RCL_SYSTEM_TIME}.now() sec: " << rclcpp::Clock{RCL_SYSTEM_TIME}.now().seconds());  // Get the current time using rclcpp::Clock
+    //RCLCPP_INFO_STREAM(get_logger(), "  rclcpp::Clock{RCL_SYSTEM_TIME}.now() nao: " << rclcpp::Clock{RCL_SYSTEM_TIME}.now().nanoseconds());  // Get the current time using rclcpp::Clock
 
     if (nbytes < 0) {
+      std::cout << "nwljäs error" << std::endl;
+
       perror("can raw socket read");
       return false;
     }
 
     if (nbytes < sizeof(struct can_frame)) {
+      std::cout << "viies error" << std::endl;
+
       fprintf(stderr, "read: incomplete CAN frame\n");
       return false;
     }
@@ -174,13 +183,15 @@ int main(int argc, char* argv[]) {
   auto node = rclcpp::Node::make_shared("can_subscriber");
 
   Can sockat_can;
-  sockat_can.init("vcan0");
+  sockat_can.init("can0");
   CanFrame fr;
 
   while (rclcpp::ok()) {
+    //std::cout << "pyörii" << std::endl;
     if (sockat_can.processReceivedFrames(fr)) {
-      RCLCPP_INFO(node->get_logger(), "len %d byte, id: %d, data: %02x %x %02x %02x %02x %02x %02x %02x", fr.len,
-                   fr.id, fr.data[0], fr.data[1], fr.data[2], fr.data[3], fr.data[4], fr.data[5], fr.data[6], fr.data[7]);
+      //std::cout << "pyörii2" << std::endl;
+      //RCLCPP_INFO(node->get_logger(), "len %d byte, id: %d, data: %02x %x %02x %02x %02x %02x %02x %02x", fr.len,
+        //           fr.id, fr.data[0], fr.data[1], fr.data[2], fr.data[3], fr.data[4], fr.data[5], fr.data[6], fr.data[7]);
 
     }
     rclcpp::spin_some(node);

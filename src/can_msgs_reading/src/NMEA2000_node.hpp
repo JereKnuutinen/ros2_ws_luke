@@ -1,5 +1,6 @@
 
 #include <cmath>
+#include <iomanip>
 #include <rclcpp/rclcpp.hpp>
 #include "custom_msgs/msg/isobus.hpp" 
 #include "std_msgs/msg/string.hpp"
@@ -106,19 +107,20 @@ class NMEA2000Parser : public rclcpp::Node
                 break;
 
             case 0xF805:	// GNSS Position Data
-                std::cout << msg.pgn << std::endl;
+                //std::cout << msg.pgn << std::endl;
                 if (Parse_FastPacketProtocol((uint8_t*)msg.data.data(), &GNSS_Position_Data))
                     Parse_GNSS_Position(&GNSS_Position_Data, msg.header);
                 break;
 
             case 0xFA06:	// GNSS Pseudo Noise Statistics
-                std::cout << msg.pgn << std::endl;
+                //std::cout << msg.pgn << std::endl;
                 if( Parse_FastPacketProtocol((uint8_t*)msg.data.data(), &GNSS_PseudoNoiseStatistics))
                     Parse_GNSS_PseudoNoiseStats(&GNSS_PseudoNoiseStatistics, msg.header);
                 break;
 
-            default:
-                std::cout << "PNG not in switch case" << std::endl;;
+            //default:
+                //std::cout << msg.pgn << std::endl;
+                //std::cout << "PNG not in switch case" << std::endl;;
 
         }
         #ifdef BERRYBOT
@@ -153,9 +155,9 @@ class NMEA2000Parser : public rclcpp::Node
         unsigned int SeqCount = msgData[0] >> 5;
         unsigned int FrameCount = msgData[0] & 0x1F;
         incre = incre + 1;
-        std::cout << FrameCount << std::endl;
-        std::cout << data->frame << std::endl;
-        std::cout << incre << std::endl;
+        //std::cout << FrameCount << std::endl;
+        //std::cout << data->frame << std::endl;
+        //std::cout << incre << std::endl;
         if (FrameCount == 0)
         {
             data->seq = SeqCount;
@@ -164,20 +166,20 @@ class NMEA2000Parser : public rclcpp::Node
 
             if(data->lenght > FAST_PACKET_DATA_SIZE)
             {
-                std::cout << "Error packet too big" << std::endl;
+                //std::cout << "Error packet too big" << std::endl;
                 // Error packet too big!
                 data->lenght = 0;
             }
             else
             {
-                std::cout << "meni for" << std::endl;
+                //std::cout << "meni for" << std::endl;
                 for(int i=0; i<6; i++)
                     data->data[i] = msgData[2+i];
             }
         }
         else if (data->frame > 0)
         {
-            std::cout << "meni else if" << std::endl;
+            //std::cout << "meni else if" << std::endl;
             if( data->frame != FrameCount || data->seq != SeqCount)
             {
                 std::cout << "Error frame dropped or seq mismathc" << std::endl;
@@ -193,11 +195,11 @@ class NMEA2000Parser : public rclcpp::Node
                     if (pos < data->lenght)
                         data->data[pos] = msgData[1+i];
                 }
-                std::cout << data->lenght << std::endl;
-                std::cout << (13 + (data->frame - 1) * 7) << std::endl;
+                //std::cout << data->lenght << std::endl;
+                //std::cout << (13 + (data->frame - 1) * 7) << std::endl;
                 if( (13 + (data->frame - 1) * 7) >= data->lenght)
                 {
-                    std::cout << "returnaa1" << std::endl;
+                    //std::cout << "returnaa1" << std::endl;
                     data->frame = 0;
                     return 1;
                 }
@@ -205,7 +207,7 @@ class NMEA2000Parser : public rclcpp::Node
                 data->frame++;
             }
         }
-        std::cout << "meni tänne" << std::endl;
+        //std::cout << "meni tänne" << std::endl;
         return 0;
     }
 
@@ -267,6 +269,9 @@ class NMEA2000Parser : public rclcpp::Node
 
         GNSS_publisher_->publish(gnss_msg);
 
+        std::cout << std::setprecision(13) << latitude << std::endl;
+        std::cout << "GPS, longitude "<< longitude << std::endl;
+        std::cout << "GPS, latitude "<< latitude << std::endl;
         std::cout << "GPS, altitude "<< altitude << std::endl;
         std::cout << "GPS, GPSType "<< GPSType << std::endl;
         std::cout << "GPS, GPSFix "<< GPSFix << std::endl;
@@ -286,7 +291,9 @@ class NMEA2000Parser : public rclcpp::Node
         latitude = ((double)lat) * 1e-7;
         longitude = ((double)lon) * 1e-7;
 
+        std::cout <<"GPS rapid" << std::endl;
         std::cout <<"GPS, latitude " << latitude << std::endl;
+        std::cout << std::setprecision(13) << latitude << std::endl;
         std::cout <<"GPS, longitude " << longitude << std::endl;
     }
 
@@ -311,7 +318,7 @@ class NMEA2000Parser : public rclcpp::Node
     void Parse_COG_SOG_RapidUpdate(uint8_t* data, std_msgs::msg::Header stamp) {
         compass_rad = ((double)((unsigned short)(data[2] | (data[3] << 8)))) * 1e-4;
         speed_ms =((double)((unsigned short)(data[4] | (data[5] << 8)))) * 1e-2;
-
+        std::cout <<"GPS rapid" << std::endl;
         std::cout << "GPS, compass_rad" <<  compass_rad << std::endl;
         std::cout << "GPS, speed_ms" << speed_ms << std::endl;
 
@@ -343,8 +350,8 @@ class NMEA2000Parser : public rclcpp::Node
         tf2::convert(quaternion, ros_quaternion);
 
         // Print the resulting quaternion
-        RCLCPP_INFO(get_logger(), "Quaternion: x=%f, y=%f, z=%f, w=%f",
-        ros_quaternion.x, ros_quaternion.y, ros_quaternion.z, ros_quaternion.w);
+        //RCLCPP_INFO(get_logger(), "Quaternion: x=%f, y=%f, z=%f, w=%f",
+        //ros_quaternion.x, ros_quaternion.y, ros_quaternion.z, ros_quaternion.w);
 
         // Implementoi IMU publishus
         // Create sensor_msgs/Imu message
