@@ -1,5 +1,0 @@
-/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd_vendor_install/lib/pkgconfig/libzstd.pc
-/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd_vendor_install/include/zstd.h
-/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd_vendor_install/lib/libzstd.so.1.4.4
-/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd_vendor_install/lib/libzstd.so.1
-/home/mlemsalu/ros2_ws_luke/build/zstd_vendor/zstd_vendor_install/lib/libzstd.so

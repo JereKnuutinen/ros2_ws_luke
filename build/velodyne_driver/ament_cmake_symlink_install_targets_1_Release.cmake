@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mlemsalu/ros2_ws_luke/build/velodyne_driver/libvelodyne_driver.so" "TARGETS" "velodyne_driver" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

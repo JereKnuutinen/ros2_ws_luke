@@ -1,1 +1,0 @@
-/home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/rosbag2_storage_default_plugins/include/rosbag2_storage_default_plugins/sqlite/sqlite_statement_wrapper.hpp

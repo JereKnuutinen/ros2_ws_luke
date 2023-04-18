@@ -1,6 +1,0 @@
-Invoking command in '/home/mlemsalu/ros2_ws_luke/build/velodyne_laserscan': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mlemsalu/ros2_ws_luke/src/velodyne-foxy-devel/velodyne_laserscan -DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/install/velodyne_laserscan
-Invoked command in '/home/mlemsalu/ros2_ws_luke/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mlemsalu/ros2_ws_luke/src/velodyne-foxy-devel/velodyne_laserscan -DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/install/velodyne_laserscan
-Invoking command in '/home/mlemsalu/ros2_ws_luke/build/velodyne_laserscan': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mlemsalu/ros2_ws_luke/build/velodyne_laserscan -- -j12 -l12
-Invoked command in '/home/mlemsalu/ros2_ws_luke/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mlemsalu/ros2_ws_luke/build/velodyne_laserscan -- -j12 -l12
-Invoking command in '/home/mlemsalu/ros2_ws_luke/build/velodyne_laserscan': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mlemsalu/ros2_ws_luke/build/velodyne_laserscan
-Invoked command in '/home/mlemsalu/ros2_ws_luke/build/velodyne_laserscan' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mlemsalu/ros2_ws_luke/build/velodyne_laserscan

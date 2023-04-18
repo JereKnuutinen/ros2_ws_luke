@@ -1,3 +1,0 @@
-[console_scripts]
-bag_to_file = ros2bag_to_files.bag_to_file:main
-

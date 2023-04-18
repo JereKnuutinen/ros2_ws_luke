@@ -1,1 +1,0 @@
-/home/mlemsalu/ros2_ws_luke/build/zed_ros2/ament_cmake_core/zed_ros2Config-version.cmake

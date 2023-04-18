@@ -1,9 +1,0 @@
-/home/mlemsalu/ros2_ws_luke/build/rosbag2/CMakeFiles/install/strip.dir
-/home/mlemsalu/ros2_ws_luke/build/rosbag2/CMakeFiles/install/local.dir
-/home/mlemsalu/ros2_ws_luke/build/rosbag2/CMakeFiles/edit_cache.dir
-/home/mlemsalu/ros2_ws_luke/build/rosbag2/CMakeFiles/test.dir
-/home/mlemsalu/ros2_ws_luke/build/rosbag2/CMakeFiles/install.dir
-/home/mlemsalu/ros2_ws_luke/build/rosbag2/CMakeFiles/list_install_components.dir
-/home/mlemsalu/ros2_ws_luke/build/rosbag2/CMakeFiles/rebuild_cache.dir
-/home/mlemsalu/ros2_ws_luke/build/rosbag2/CMakeFiles/rosbag2_uninstall.dir
-/home/mlemsalu/ros2_ws_luke/build/rosbag2/CMakeFiles/uninstall.dir

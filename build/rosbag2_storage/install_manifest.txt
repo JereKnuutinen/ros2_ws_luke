@@ -1,3 +1,0 @@
-/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage/lib/librosbag2_storage.so
-/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage/share/rosbag2_storage/cmake/export_rosbag2_storageExport.cmake
-/home/mlemsalu/ros2_ws_luke/install/rosbag2_storage/share/rosbag2_storage/cmake/export_rosbag2_storageExport-release.cmake

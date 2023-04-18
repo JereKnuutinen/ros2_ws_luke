@@ -1,6 +1,0 @@
-Invoking command in '/home/mlemsalu/ros2_ws_luke/build/shared_queues_vendor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/shared_queues_vendor -DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/install/shared_queues_vendor
-Invoked command in '/home/mlemsalu/ros2_ws_luke/build/shared_queues_vendor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/shared_queues_vendor -DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/install/shared_queues_vendor
-Invoking command in '/home/mlemsalu/ros2_ws_luke/build/shared_queues_vendor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mlemsalu/ros2_ws_luke/build/shared_queues_vendor -- -j12 -l12
-Invoked command in '/home/mlemsalu/ros2_ws_luke/build/shared_queues_vendor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mlemsalu/ros2_ws_luke/build/shared_queues_vendor -- -j12 -l12
-Invoking command in '/home/mlemsalu/ros2_ws_luke/build/shared_queues_vendor': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mlemsalu/ros2_ws_luke/build/shared_queues_vendor
-Invoked command in '/home/mlemsalu/ros2_ws_luke/build/shared_queues_vendor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mlemsalu/ros2_ws_luke/build/shared_queues_vendor

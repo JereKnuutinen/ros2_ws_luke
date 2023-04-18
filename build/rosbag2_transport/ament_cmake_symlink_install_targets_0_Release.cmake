@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mlemsalu/ros2_ws_luke/build/rosbag2_transport/test_rosbag2_transport/_rosbag2_transport_py.cpython-38-x86_64-linux-gnu.so" "TARGETS" "rosbag2_transport_py" "DESTINATION" "lib/python3.8/site-packages/rosbag2_transport")

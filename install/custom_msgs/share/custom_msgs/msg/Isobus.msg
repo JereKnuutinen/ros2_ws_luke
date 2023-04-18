@@ -1,1 +1,0 @@
-/home/mlemsalu/ros2_ws_luke/src/custom_msgs/msg/Isobus.msg

@@ -1,6 +1,0 @@
-Invoking command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/rosbag2_test_common -DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common
-Invoked command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/mlemsalu/ros2_ws_luke/src/rosbag2-foxy-future/rosbag2_test_common -DCMAKE_INSTALL_PREFIX=/home/mlemsalu/ros2_ws_luke/install/rosbag2_test_common
-Invoking command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common -- -j12 -l12
-Invoked command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common -- -j12 -l12
-Invoking command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common
-Invoked command in '/home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/mlemsalu/ros2_ws_luke/build/rosbag2_test_common

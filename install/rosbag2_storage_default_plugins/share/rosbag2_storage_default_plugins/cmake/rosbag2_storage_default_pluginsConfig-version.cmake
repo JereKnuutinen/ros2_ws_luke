@@ -1,1 +1,0 @@
-/home/mlemsalu/ros2_ws_luke/build/rosbag2_storage_default_plugins/ament_cmake_core/rosbag2_storage_default_pluginsConfig-version.cmake

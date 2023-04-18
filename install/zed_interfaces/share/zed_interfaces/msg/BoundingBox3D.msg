@@ -1,1 +1,0 @@
-/home/mlemsalu/ros2_ws_luke/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox3D.msg

@@ -1,9 +1,0 @@
-/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor/CMakeFiles/install/strip.dir
-/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor/CMakeFiles/install/local.dir
-/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor/CMakeFiles/edit_cache.dir
-/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor/CMakeFiles/test.dir
-/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor/CMakeFiles/install.dir
-/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor/CMakeFiles/list_install_components.dir
-/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor/CMakeFiles/rebuild_cache.dir
-/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor/CMakeFiles/sqlite3_vendor_uninstall.dir
-/home/mlemsalu/ros2_ws_luke/build/sqlite3_vendor/CMakeFiles/uninstall.dir

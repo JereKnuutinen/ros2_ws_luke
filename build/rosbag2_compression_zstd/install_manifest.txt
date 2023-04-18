@@ -1,3 +1,0 @@
-/home/mlemsalu/ros2_ws_luke/install/rosbag2_compression_zstd/lib/librosbag2_compression_zstd.so
-/home/mlemsalu/ros2_ws_luke/install/rosbag2_compression_zstd/share/rosbag2_compression_zstd/cmake/export_rosbag2_compression_zstdExport.cmake
-/home/mlemsalu/ros2_ws_luke/install/rosbag2_compression_zstd/share/rosbag2_compression_zstd/cmake/export_rosbag2_compression_zstdExport-release.cmake

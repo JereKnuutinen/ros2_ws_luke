@@ -1,7 +1,0 @@
-{
-  "package_name": "velodyne_msgs",
-  "non_idl_tuples": [
-    "/home/mlemsalu/ros2_ws_luke/src/velodyne-foxy-devel/velodyne_msgs:msg/VelodynePacket.msg",
-    "/home/mlemsalu/ros2_ws_luke/src/velodyne-foxy-devel/velodyne_msgs:msg/VelodyneScan.msg"
-  ]
-}
