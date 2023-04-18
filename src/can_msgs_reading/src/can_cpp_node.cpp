@@ -30,7 +30,7 @@
 #include "custom_msgs/msg/isobus.hpp" 
 #include "ISOBUSframe.hpp"
 #include "NMEA2000_node.hpp"
-
+#include "ISOBUSTractor.hpp"
 
 struct CanFrame {
   uint32_t id = 0;
@@ -44,7 +44,9 @@ class Can : public rclcpp::Node {
  public: 
   Can() : Node("minimal_publisher") {
     publisher_ = this->create_publisher<custom_msgs::msg::Isobus>("Isobus", 10);
-    parser_ = std::make_shared<NMEA2000Parser>();
+    NMEA2000_parser_ = std::make_shared<NMEA2000Parser>();
+    Isobus_parser_ = std::make_shared<IsobusTractor>();
+
   }
 
   bool init(const std::string& dev) {
@@ -155,9 +157,8 @@ class Can : public rclcpp::Node {
     // msg.len = frame.len;
     //msg.flags = frame.flags;
     //memcpy(msg.data, frame.data, len);
-
-    parser_->Isobus_parser(isobus_frame_msg);
-
+    NMEA2000_parser_->Nmea2000_parser(isobus_frame_msg);
+    Isobus_parser_->Isobus_parser(isobus_frame_msg);
     return true;
   }
 
@@ -171,7 +172,8 @@ class Can : public rclcpp::Node {
 
 
 
-  std::shared_ptr<NMEA2000Parser> parser_;
+  std::shared_ptr<NMEA2000Parser> NMEA2000_parser_;
+  std::shared_ptr<IsobusTractor> Isobus_parser_;
 };
 
 int main(int argc, char* argv[]) {

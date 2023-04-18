@@ -77,10 +77,11 @@ class NMEA2000Parser : public rclcpp::Node
         //subscription_ = this->create_subscription<custom_msgs::msg::Isobus>(
         //              "Isobus", 10, std::bind(&NMEA2000Subscriber::topic_callback, this, _1));
 
+
     }
 
   
-    void Isobus_parser(custom_msgs::msg::Isobus msg)
+    void Nmea2000_parser(custom_msgs::msg::Isobus msg)
     {
         switch(msg.pgn)
         {
@@ -150,6 +151,8 @@ class NMEA2000Parser : public rclcpp::Node
 
     FastPacketData GNSS_Position_Data;
     FastPacketData GNSS_PseudoNoiseStatistics;
+
+
 
     int Parse_FastPacketProtocol(uint8_t*  msgData, struct FastPacketData *data) {
         unsigned int SeqCount = msgData[0] >> 5;
@@ -291,7 +294,7 @@ class NMEA2000Parser : public rclcpp::Node
         latitude = ((double)lat) * 1e-7;
         longitude = ((double)lon) * 1e-7;
 
-        std::cout <<"GPS rapid" << std::endl;
+        std::cout <<"GPS rapid " << std::endl;
         std::cout <<"GPS, latitude " << latitude << std::endl;
         std::cout << std::setprecision(13) << latitude << std::endl;
         std::cout <<"GPS, longitude " << longitude << std::endl;
@@ -318,9 +321,9 @@ class NMEA2000Parser : public rclcpp::Node
     void Parse_COG_SOG_RapidUpdate(uint8_t* data, std_msgs::msg::Header stamp) {
         compass_rad = ((double)((unsigned short)(data[2] | (data[3] << 8)))) * 1e-4;
         speed_ms =((double)((unsigned short)(data[4] | (data[5] << 8)))) * 1e-2;
-        std::cout <<"GPS rapid" << std::endl;
-        std::cout << "GPS, compass_rad" <<  compass_rad << std::endl;
-        std::cout << "GPS, speed_ms" << speed_ms << std::endl;
+        std::cout <<"GPS rapid " << std::endl;
+        std::cout << "GPS, compass_rad " <<  compass_rad << std::endl;
+        std::cout << "GPS, speed_ms " << speed_ms << std::endl;
 
 
     }

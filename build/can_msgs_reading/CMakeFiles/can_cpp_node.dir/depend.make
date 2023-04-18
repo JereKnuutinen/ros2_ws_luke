@@ -5,6 +5,7 @@ CMakeFiles/can_cpp_node.dir/src/can_cpp_node.cpp.o: /home/mlemsalu/ros2_ws_luke/
 CMakeFiles/can_cpp_node.dir/src/can_cpp_node.cpp.o: /home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/detail/isobus__struct.hpp
 CMakeFiles/can_cpp_node.dir/src/can_cpp_node.cpp.o: /home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/detail/isobus__traits.hpp
 CMakeFiles/can_cpp_node.dir/src/can_cpp_node.cpp.o: /home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/isobus.hpp
+CMakeFiles/can_cpp_node.dir/src/can_cpp_node.cpp.o: /home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/ISOBUSTractor.hpp
 CMakeFiles/can_cpp_node.dir/src/can_cpp_node.cpp.o: /home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/ISOBUSframe.hpp
 CMakeFiles/can_cpp_node.dir/src/can_cpp_node.cpp.o: /home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/NMEA2000_node.hpp
 CMakeFiles/can_cpp_node.dir/src/can_cpp_node.cpp.o: /home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/can_cpp_node.cpp

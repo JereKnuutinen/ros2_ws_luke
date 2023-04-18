@@ -6,6 +6,7 @@ CMakeFiles/can_cpp_node.dir/src/can_cpp_node.cpp.o
  /home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/detail/isobus__struct.hpp
  /home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/detail/isobus__traits.hpp
  /home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/isobus.hpp
+ /home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/ISOBUSTractor.hpp
  /home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/ISOBUSframe.hpp
  /home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/NMEA2000_node.hpp
  /home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/can_cpp_node.cpp

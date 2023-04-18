@@ -54,6 +54,30 @@ custom_msgs/msg/detail/isobus__builder.hpp
 custom_msgs/msg/detail/isobus__traits.hpp
 /home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/custom_msgs/msg/detail/isobus__traits.hpp
 
+/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/ISOBUSTractor.hpp
+cmath
+-
+iomanip
+-
+rclcpp/rclcpp.hpp
+-
+custom_msgs/msg/isobus.hpp
+/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/custom_msgs/msg/isobus.hpp
+std_msgs/msg/string.hpp
+/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/std_msgs/msg/string.hpp
+std_msgs/msg/header.hpp
+-
+sensor_msgs/msg/imu.hpp
+-
+sensor_msgs/msg/nav_sat_fix.hpp
+-
+geometry_msgs/msg/quaternion.hpp
+-
+tf2/LinearMath/Quaternion.h
+-
+tf2_geometry_msgs/tf2_geometry_msgs.h
+-
+
 /home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/ISOBUSframe.hpp
 stdint.h
 -
@@ -145,6 +169,8 @@ ISOBUSframe.hpp
 /home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/ISOBUSframe.hpp
 NMEA2000_node.hpp
 /home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/NMEA2000_node.hpp
+ISOBUSTractor.hpp
+/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/ISOBUSTractor.hpp
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
 builtin_interfaces/msg/detail/duration__struct.hpp
