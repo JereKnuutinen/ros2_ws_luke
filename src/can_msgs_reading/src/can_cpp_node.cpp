@@ -155,10 +155,7 @@ class Can : public rclcpp::Node {
     // msg.len = frame.len;
     //msg.flags = frame.flags;
     //memcpy(msg.data, frame.data, len);
-    //auto message = std_msgs::msg::String();
-    //std::cout << "meni" << std::endl;
-    //message.data = "Hello, world!";
-    //publisher_->publish(isobus_frame_msg);
+
     parser_->Isobus_parser(isobus_frame_msg);
 
     return true;
