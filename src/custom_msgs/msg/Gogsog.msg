@@ -1,0 +1,3 @@
+std_msgs/Header header
+float64 speed_ms
+float64 compass_rad

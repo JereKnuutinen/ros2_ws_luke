@@ -6,6 +6,46 @@
 
 #IncludeRegexTransform: 
 
+/home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/detail/gogsog__builder.hpp
+custom_msgs/msg/detail/gogsog__struct.hpp
+/home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/detail/custom_msgs/msg/detail/gogsog__struct.hpp
+rosidl_runtime_cpp/message_initialization.hpp
+-
+algorithm
+-
+utility
+-
+
+/home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/detail/gogsog__struct.hpp
+rosidl_runtime_cpp/bounded_vector.hpp
+-
+rosidl_runtime_cpp/message_initialization.hpp
+-
+algorithm
+-
+array
+-
+memory
+-
+string
+-
+vector
+-
+std_msgs/msg/detail/header__struct.hpp
+/home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/detail/std_msgs/msg/detail/header__struct.hpp
+
+/home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/detail/gogsog__traits.hpp
+custom_msgs/msg/detail/gogsog__struct.hpp
+/home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/detail/custom_msgs/msg/detail/gogsog__struct.hpp
+rosidl_runtime_cpp/traits.hpp
+-
+stdint.h
+-
+type_traits
+-
+std_msgs/msg/detail/header__traits.hpp
+/home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/detail/std_msgs/msg/detail/header__traits.hpp
+
 /home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/detail/isobus__builder.hpp
 custom_msgs/msg/detail/isobus__struct.hpp
 /home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/detail/custom_msgs/msg/detail/isobus__struct.hpp
@@ -45,6 +85,14 @@ type_traits
 -
 std_msgs/msg/detail/header__traits.hpp
 /home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/detail/std_msgs/msg/detail/header__traits.hpp
+
+/home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/gogsog.hpp
+custom_msgs/msg/detail/gogsog__struct.hpp
+/home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/custom_msgs/msg/detail/gogsog__struct.hpp
+custom_msgs/msg/detail/gogsog__builder.hpp
+/home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/custom_msgs/msg/detail/gogsog__builder.hpp
+custom_msgs/msg/detail/gogsog__traits.hpp
+/home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/custom_msgs/msg/detail/gogsog__traits.hpp
 
 /home/mlemsalu/ros2_ws_luke/install/custom_msgs/include/custom_msgs/msg/isobus.hpp
 custom_msgs/msg/detail/isobus__struct.hpp
@@ -115,6 +163,8 @@ tf2/LinearMath/Quaternion.h
 -
 tf2_geometry_msgs/tf2_geometry_msgs.h
 -
+custom_msgs/msg/gogsog.hpp
+/home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/custom_msgs/msg/gogsog.hpp
 
 /home/mlemsalu/ros2_ws_luke/src/can_msgs_reading/src/can_cpp_node.cpp
 cstring

@@ -58,9 +58,11 @@ custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/_cus
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_sync.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_isobus.py
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_gogsog.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/__init__.py
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_sync_s.c
 custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_isobus_s.c
+custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_gogsog_s.c
 
 
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/lib/rosidl_generator_py/rosidl_generator_py
@@ -78,6 +80,7 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/Sync.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/Isobus.idl
+rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/Gogsog.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -190,6 +193,9 @@ rosidl_generator_py/custom_msgs/msg/_sync.py: rosidl_generator_py/custom_msgs/_c
 rosidl_generator_py/custom_msgs/msg/_isobus.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_isobus.py
 
+rosidl_generator_py/custom_msgs/msg/_gogsog.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_gogsog.py
+
 rosidl_generator_py/custom_msgs/msg/__init__.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/__init__.py
 
@@ -199,15 +205,20 @@ rosidl_generator_py/custom_msgs/msg/_sync_s.c: rosidl_generator_py/custom_msgs/_
 rosidl_generator_py/custom_msgs/msg/_isobus_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_isobus_s.c
 
+rosidl_generator_py/custom_msgs/msg/_gogsog_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/_gogsog_s.c
+
 custom_msgs__py: custom_msgs__py/CMakeFiles/custom_msgs__py
 custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
 custom_msgs__py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_sync.py
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_isobus.py
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_gogsog.py
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/__init__.py
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_sync_s.c
 custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_isobus_s.c
+custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_gogsog_s.c
 custom_msgs__py: custom_msgs__py/CMakeFiles/custom_msgs__py.dir/build.make
 
 .PHONY : custom_msgs__py

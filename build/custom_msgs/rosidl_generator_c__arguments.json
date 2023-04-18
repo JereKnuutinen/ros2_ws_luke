@@ -4,7 +4,8 @@
   "template_dir": "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource",
   "idl_tuples": [
     "/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Sync.idl",
-    "/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Isobus.idl"
+    "/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Isobus.idl",
+    "/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Gogsog.idl"
   ],
   "ros_interface_dependencies": [
     "geometry_msgs:/opt/ros/foxy/share/geometry_msgs/msg/Accel.idl",
@@ -121,6 +122,7 @@
     "/opt/ros/foxy/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
     "/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Sync.idl",
     "/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Isobus.idl",
+    "/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Gogsog.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/Accel.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl",
     "/opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl",

@@ -110,6 +110,9 @@ CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/cust
 CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o: /usr/include/python3.8/unicodeobject.h
 CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o: /usr/include/python3.8/warnings.h
 CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o: /usr/include/python3.8/weakrefobject.h
+CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o: rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.h
+CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o: rosidl_generator_c/custom_msgs/msg/detail/gogsog__struct.h
+CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o: rosidl_generator_c/custom_msgs/msg/detail/gogsog__type_support.h
 CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o: rosidl_generator_c/custom_msgs/msg/detail/isobus__functions.h
 CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o: rosidl_generator_c/custom_msgs/msg/detail/isobus__struct.h
 CMakeFiles/custom_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c.o: rosidl_generator_c/custom_msgs/msg/detail/isobus__type_support.h

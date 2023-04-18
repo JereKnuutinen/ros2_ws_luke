@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/custom_msgs__python.dir/rosidl_generator_py/custom_msgs/msg/_gogsog_s.c.o"
   "CMakeFiles/custom_msgs__python.dir/rosidl_generator_py/custom_msgs/msg/_isobus_s.c.o"
   "CMakeFiles/custom_msgs__python.dir/rosidl_generator_py/custom_msgs/msg/_sync_s.c.o"
   "rosidl_generator_py/custom_msgs/libcustom_msgs__python.pdb"

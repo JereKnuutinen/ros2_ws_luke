@@ -61,6 +61,10 @@ CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/isobus.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/isobus__builder.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/isobus__struct.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/isobus__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/gogsog.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/gogsog__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/gogsog__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/gogsog__traits.hpp
 
 
 rosidl_generator_cpp/custom_msgs/msg/sync.hpp: /opt/ros/foxy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -80,6 +84,7 @@ rosidl_generator_cpp/custom_msgs/msg/sync.hpp: /opt/ros/foxy/share/rosidl_genera
 rosidl_generator_cpp/custom_msgs/msg/sync.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/custom_msgs/msg/sync.hpp: rosidl_adapter/custom_msgs/msg/Sync.idl
 rosidl_generator_cpp/custom_msgs/msg/sync.hpp: rosidl_adapter/custom_msgs/msg/Isobus.idl
+rosidl_generator_cpp/custom_msgs/msg/sync.hpp: rosidl_adapter/custom_msgs/msg/Gogsog.idl
 rosidl_generator_cpp/custom_msgs/msg/sync.hpp: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_cpp/custom_msgs/msg/sync.hpp: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_cpp/custom_msgs/msg/sync.hpp: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -201,6 +206,18 @@ rosidl_generator_cpp/custom_msgs/msg/detail/isobus__struct.hpp: rosidl_generator
 rosidl_generator_cpp/custom_msgs/msg/detail/isobus__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/sync.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/isobus__traits.hpp
 
+rosidl_generator_cpp/custom_msgs/msg/gogsog.hpp: rosidl_generator_cpp/custom_msgs/msg/sync.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/gogsog.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/gogsog__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/sync.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/gogsog__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/gogsog__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/sync.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/gogsog__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/gogsog__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/sync.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/gogsog__traits.hpp
+
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/sync.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/sync__builder.hpp
@@ -210,6 +227,10 @@ custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/isobus.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/isobus__builder.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/isobus__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/isobus__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/gogsog.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/gogsog__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/gogsog__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/gogsog__traits.hpp
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp.dir/build.make
 
 .PHONY : custom_msgs__cpp

@@ -27,8 +27,8 @@ class IsobusTractor : public rclcpp::Node
     void Isobus_parser(custom_msgs::msg::Isobus msg) {
         if (msg.pgn == 0xFE49) {
              // ground speed
-                std::cout<< "on menossaground speed parseriin" << std::endl;
-                Parse_Ground_Speed((uint8_t*)msg.data.data(), msg.header);
+            //std::cout<< "on menossaground speed parseriin" << std::endl;
+            Parse_Ground_Speed((uint8_t*)msg.data.data(), msg.header);
         }
     }
 
@@ -45,9 +45,11 @@ class IsobusTractor : public rclcpp::Node
 
         temp = ((data[2] << 0) | (data[3] << 8) | (data[4] << 16) | (data[5] << 24)) * 0.001;
         grounddistance = temp;
+
+        /*
         std::cout << "groundspeed: "<< groundspeed << std::endl;
         std::cout << "ground dis: "<< grounddistance << std::endl;
-
+        */
     }
       private:
         double groundspeed;

@@ -55,6 +55,7 @@ include CMakeFiles/custom_msgs.dir/progress.make
 
 CMakeFiles/custom_msgs: /home/mlemsalu/ros2_ws_luke/src/custom_msgs/msg/Sync.msg
 CMakeFiles/custom_msgs: /home/mlemsalu/ros2_ws_luke/src/custom_msgs/msg/Isobus.msg
+CMakeFiles/custom_msgs: /home/mlemsalu/ros2_ws_luke/src/custom_msgs/msg/Gogsog.msg
 CMakeFiles/custom_msgs: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 CMakeFiles/custom_msgs: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 CMakeFiles/custom_msgs: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl

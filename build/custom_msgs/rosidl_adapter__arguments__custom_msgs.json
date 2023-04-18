@@ -2,6 +2,7 @@
   "package_name": "custom_msgs",
   "non_idl_tuples": [
     "/home/mlemsalu/ros2_ws_luke/src/custom_msgs:msg/Sync.msg",
-    "/home/mlemsalu/ros2_ws_luke/src/custom_msgs:msg/Isobus.msg"
+    "/home/mlemsalu/ros2_ws_luke/src/custom_msgs:msg/Isobus.msg",
+    "/home/mlemsalu/ros2_ws_luke/src/custom_msgs:msg/Gogsog.msg"
   ]
 }

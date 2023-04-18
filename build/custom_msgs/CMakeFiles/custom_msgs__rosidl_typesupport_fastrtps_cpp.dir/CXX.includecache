@@ -6,6 +6,30 @@
 
 #IncludeRegexTransform: 
 
+/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/gogsog__type_support.cpp
+custom_msgs/msg/detail/gogsog__rosidl_typesupport_fastrtps_cpp.hpp
+/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/custom_msgs/msg/detail/gogsog__rosidl_typesupport_fastrtps_cpp.hpp
+custom_msgs/msg/detail/gogsog__struct.hpp
+/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/custom_msgs/msg/detail/gogsog__struct.hpp
+limits
+-
+stdexcept
+-
+string
+-
+rosidl_typesupport_cpp/message_type_support.hpp
+/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/rosidl_typesupport_cpp/message_type_support.hpp
+rosidl_typesupport_fastrtps_cpp/identifier.hpp
+/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/identifier.hpp
+rosidl_typesupport_fastrtps_cpp/message_type_support.h
+/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/message_type_support.h
+rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp
+/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/message_type_support_decl.hpp
+rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp
+/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/rosidl_typesupport_fastrtps_cpp/wstring_conversion.hpp
+fastcdr/Cdr.h
+/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/fastcdr/Cdr.h
+
 /home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/isobus__type_support.cpp
 custom_msgs/msg/detail/isobus__rosidl_typesupport_fastrtps_cpp.hpp
 /home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/custom_msgs/msg/detail/isobus__rosidl_typesupport_fastrtps_cpp.hpp
@@ -424,6 +448,24 @@ vector
 builtin_interfaces/msg/detail/time__struct.hpp
 /opt/ros/foxy/include/std_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.hpp
 
+rosidl_generator_cpp/custom_msgs/msg/detail/gogsog__struct.hpp
+rosidl_runtime_cpp/bounded_vector.hpp
+-
+rosidl_runtime_cpp/message_initialization.hpp
+-
+algorithm
+-
+array
+-
+memory
+-
+string
+-
+vector
+-
+std_msgs/msg/detail/header__struct.hpp
+rosidl_generator_cpp/custom_msgs/msg/detail/std_msgs/msg/detail/header__struct.hpp
+
 rosidl_generator_cpp/custom_msgs/msg/detail/isobus__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
@@ -465,6 +507,18 @@ nav_msgs/msg/detail/odometry__struct.hpp
 rosidl_generator_cpp/custom_msgs/msg/detail/nav_msgs/msg/detail/odometry__struct.hpp
 geometry_msgs/msg/detail/pose_stamped__struct.hpp
 rosidl_generator_cpp/custom_msgs/msg/detail/geometry_msgs/msg/detail/pose_stamped__struct.hpp
+
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/gogsog__rosidl_typesupport_fastrtps_cpp.hpp
+rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/rosidl_runtime_c/message_type_support_struct.h
+rosidl_typesupport_interface/macros.h
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/rosidl_typesupport_interface/macros.h
+custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+custom_msgs/msg/detail/gogsog__struct.hpp
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/custom_msgs/msg/detail/gogsog__struct.hpp
+fastcdr/Cdr.h
+rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/fastcdr/Cdr.h
 
 rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/isobus__rosidl_typesupport_fastrtps_cpp.hpp
 rosidl_runtime_c/message_type_support_struct.h

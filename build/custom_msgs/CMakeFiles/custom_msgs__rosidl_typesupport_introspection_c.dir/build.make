@@ -67,6 +67,7 @@ rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesuppo
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_msgs/msg/Sync.idl
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_msgs/msg/Isobus.idl
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesupport_introspection_c.h: rosidl_adapter/custom_msgs/msg/Gogsog.idl
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -170,11 +171,17 @@ rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesuppo
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/isobus__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/isobus__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__type_support.c: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__type_support.c
 
 rosidl_typesupport_introspection_c/custom_msgs/msg/detail/isobus__type_support.c: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/isobus__type_support.c
+
+rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c
 
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__type_support.c.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__type_support.c.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__type_support.c
@@ -202,16 +209,31 @@ CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesuppor
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/isobus__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/isobus__type_support.c -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/isobus__type_support.c.s
 
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c.o: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c.o: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mlemsalu/ros2_ws_luke/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c.o   -c /home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c > CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c.i
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c -o CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c.s
+
 # Object files for target custom_msgs__rosidl_typesupport_introspection_c
 custom_msgs__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__type_support.c.o" \
-"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/isobus__type_support.c.o"
+"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/isobus__type_support.c.o" \
+"CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c.o"
 
 # External object files for target custom_msgs__rosidl_typesupport_introspection_c
 custom_msgs__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__type_support.c.o
 libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/isobus__type_support.c.o
+libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c.o
 libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/build.make
 libcustom_msgs__rosidl_typesupport_introspection_c.so: libcustom_msgs__rosidl_generator_c.so
 libcustom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_c.so
@@ -247,7 +269,7 @@ libcustom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librcpp
 libcustom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libcustom_msgs__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librcutils.so
 libcustom_msgs__rosidl_typesupport_introspection_c.so: CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mlemsalu/ros2_ws_luke/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mlemsalu/ros2_ws_luke/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -261,8 +283,10 @@ CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__rosidl_typesupport_introspection_c.h
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/isobus__rosidl_typesupport_introspection_c.h
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__rosidl_typesupport_introspection_c.h
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/sync__type_support.c
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/isobus__type_support.c
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/custom_msgs/msg/detail/gogsog__type_support.c
 	cd /home/mlemsalu/ros2_ws_luke/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mlemsalu/ros2_ws_luke/src/custom_msgs /home/mlemsalu/ros2_ws_luke/src/custom_msgs /home/mlemsalu/ros2_ws_luke/build/custom_msgs /home/mlemsalu/ros2_ws_luke/build/custom_msgs /home/mlemsalu/ros2_ws_luke/build/custom_msgs/CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/depend
 

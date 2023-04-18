@@ -10,6 +10,7 @@
 #include <geometry_msgs/msg/quaternion.hpp>
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#include "custom_msgs/msg/gogsog.hpp" 
 
 
 #define FAST_PACKET_DATA_SIZE 256
@@ -30,6 +31,7 @@ class NMEA2000Parser : public rclcpp::Node
     {
         IMU_publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("Imu_messages", 10);
         GNSS_publisher_ = this->create_publisher<sensor_msgs::msg::NavSatFix>("GNSS_messages", 10);
+        Gogsog_publisher_ = this->create_publisher<custom_msgs::msg::Gogsog>("Gogsog_messages", 10);
         // GNSS Position Data
         PositionDate = 0;
         PositionTime = 0;
@@ -83,6 +85,7 @@ class NMEA2000Parser : public rclcpp::Node
   
     void Nmea2000_parser(custom_msgs::msg::Isobus msg)
     {
+        //std::cout<< msg.pgn << std::endl;
         switch(msg.pgn)
         {
             case 0xF119:	// Attitude
@@ -272,6 +275,7 @@ class NMEA2000Parser : public rclcpp::Node
 
         GNSS_publisher_->publish(gnss_msg);
 
+        /*
         std::cout << std::setprecision(13) << latitude << std::endl;
         std::cout << "GPS, longitude "<< longitude << std::endl;
         std::cout << "GPS, latitude "<< latitude << std::endl;
@@ -280,6 +284,7 @@ class NMEA2000Parser : public rclcpp::Node
         std::cout << "GPS, GPSFix "<< GPSFix << std::endl;
         std::cout << "GPS, HDOP "<< HDOP << std::endl;
         std::cout << "GPS, PDOP "<< PDOP << std::endl;
+        */
     }
 
     void Parse_PositionRapidUpdate(uint8_t*  data, std_msgs::msg::Header stamp) {
@@ -294,10 +299,12 @@ class NMEA2000Parser : public rclcpp::Node
         latitude = ((double)lat) * 1e-7;
         longitude = ((double)lon) * 1e-7;
 
+        /*
         std::cout <<"GPS rapid " << std::endl;
         std::cout <<"GPS, latitude " << latitude << std::endl;
         std::cout << std::setprecision(13) << latitude << std::endl;
         std::cout <<"GPS, longitude " << longitude << std::endl;
+        */
     }
 
     void Parse_GNSS_PseudoNoiseStats(struct FastPacketData *data, std_msgs::msg::Header stamp) {
@@ -318,12 +325,20 @@ class NMEA2000Parser : public rclcpp::Node
         STD_alt = (double)(data->data[13] | (data->data[14] << 8)) * 1e-2;
     }
 
-    void Parse_COG_SOG_RapidUpdate(uint8_t* data, std_msgs::msg::Header stamp) {
+    void Parse_COG_SOG_RapidUpdate(uint8_t* data, std_msgs::msg::Header headeri) {
         compass_rad = ((double)((unsigned short)(data[2] | (data[3] << 8)))) * 1e-4;
         speed_ms =((double)((unsigned short)(data[4] | (data[5] << 8)))) * 1e-2;
+
+        /*
         std::cout <<"GPS rapid " << std::endl;
         std::cout << "GPS, compass_rad " <<  compass_rad << std::endl;
         std::cout << "GPS, speed_ms " << speed_ms << std::endl;
+        */
+        custom_msgs::msg::Gogsog gogsog_msg;
+        gogsog_msg.header.stamp = headeri.stamp;
+        gogsog_msg.speed_ms = speed_ms;
+        gogsog_msg.compass_rad = compass_rad;
+        Gogsog_publisher_->publish(gogsog_msg);
 
 
     }
@@ -341,9 +356,12 @@ class NMEA2000Parser : public rclcpp::Node
         if(Yaw > M_PI)
         Yaw -= M_PI*2;
         #endif /* BERRYBOT */
+
+        /*
         std::cout << "GPS , Yaw " << Yaw <<std::endl;
         std::cout << "GPS , Pitch " << Pitch <<std::endl;
         std::cout << "GPS , Roll " << Roll <<std::endl;
+        */
         // Create tf2::Quaternion object and set roll, pitch, yaw
         tf2::Quaternion quaternion;
         quaternion.setRPY(Roll, Pitch, Yaw);
@@ -406,5 +424,6 @@ class NMEA2000Parser : public rclcpp::Node
     //rclcpp::Subscription<custom_msgs::msg::Isobus>::SharedPtr subscription_;
     rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr IMU_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::NavSatFix>::SharedPtr GNSS_publisher_;
+    rclcpp::Publisher<custom_msgs::msg::Gogsog>::SharedPtr Gogsog_publisher_;
 
 };

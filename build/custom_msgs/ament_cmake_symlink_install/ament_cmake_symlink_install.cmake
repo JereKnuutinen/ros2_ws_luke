@@ -373,11 +373,17 @@ ament_cmake_symlink_install_files("/home/mlemsalu/ros2_ws_luke/src/custom_msgs" 
 # install(FILES "/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Isobus.idl" "DESTINATION" "share/custom_msgs/msg")
 ament_cmake_symlink_install_files("/home/mlemsalu/ros2_ws_luke/src/custom_msgs" FILES "/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Isobus.idl" "DESTINATION" "share/custom_msgs/msg")
 
+# install(FILES "/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Gogsog.idl" "DESTINATION" "share/custom_msgs/msg")
+ament_cmake_symlink_install_files("/home/mlemsalu/ros2_ws_luke/src/custom_msgs" FILES "/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Gogsog.idl" "DESTINATION" "share/custom_msgs/msg")
+
 # install(FILES "/home/mlemsalu/ros2_ws_luke/src/custom_msgs/msg/Sync.msg" "DESTINATION" "share/custom_msgs/msg")
 ament_cmake_symlink_install_files("/home/mlemsalu/ros2_ws_luke/src/custom_msgs" FILES "/home/mlemsalu/ros2_ws_luke/src/custom_msgs/msg/Sync.msg" "DESTINATION" "share/custom_msgs/msg")
 
 # install(FILES "/home/mlemsalu/ros2_ws_luke/src/custom_msgs/msg/Isobus.msg" "DESTINATION" "share/custom_msgs/msg")
 ament_cmake_symlink_install_files("/home/mlemsalu/ros2_ws_luke/src/custom_msgs" FILES "/home/mlemsalu/ros2_ws_luke/src/custom_msgs/msg/Isobus.msg" "DESTINATION" "share/custom_msgs/msg")
+
+# install(FILES "/home/mlemsalu/ros2_ws_luke/src/custom_msgs/msg/Gogsog.msg" "DESTINATION" "share/custom_msgs/msg")
+ament_cmake_symlink_install_files("/home/mlemsalu/ros2_ws_luke/src/custom_msgs" FILES "/home/mlemsalu/ros2_ws_luke/src/custom_msgs/msg/Gogsog.msg" "DESTINATION" "share/custom_msgs/msg")
 
 # install(FILES "/home/mlemsalu/ros2_ws_luke/build/custom_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/custom_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/mlemsalu/ros2_ws_luke/src/custom_msgs" FILES "/home/mlemsalu/ros2_ws_luke/build/custom_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/custom_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

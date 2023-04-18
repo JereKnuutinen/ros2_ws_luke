@@ -111,6 +111,9 @@ CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generato
  /usr/include/python3.8/unicodeobject.h
  /usr/include/python3.8/warnings.h
  /usr/include/python3.8/weakrefobject.h
+ rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.h
+ rosidl_generator_c/custom_msgs/msg/detail/gogsog__struct.h
+ rosidl_generator_c/custom_msgs/msg/detail/gogsog__type_support.h
  rosidl_generator_c/custom_msgs/msg/detail/isobus__functions.h
  rosidl_generator_c/custom_msgs/msg/detail/isobus__struct.h
  rosidl_generator_c/custom_msgs/msg/detail/isobus__type_support.h

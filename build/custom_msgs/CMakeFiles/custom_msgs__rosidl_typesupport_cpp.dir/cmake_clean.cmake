@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/gogsog__type_support.cpp.o"
   "CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/isobus__type_support.cpp.o"
   "CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/sync__type_support.cpp.o"
   "libcustom_msgs__rosidl_typesupport_cpp.pdb"
   "libcustom_msgs__rosidl_typesupport_cpp.so"
+  "rosidl_typesupport_cpp/custom_msgs/msg/gogsog__type_support.cpp"
   "rosidl_typesupport_cpp/custom_msgs/msg/isobus__type_support.cpp"
   "rosidl_typesupport_cpp/custom_msgs/msg/sync__type_support.cpp"
 )

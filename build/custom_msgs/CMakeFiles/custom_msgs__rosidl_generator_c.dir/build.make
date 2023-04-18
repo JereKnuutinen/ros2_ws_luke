@@ -72,6 +72,7 @@ rosidl_generator_c/custom_msgs/msg/sync.h: /opt/ros/foxy/share/rosidl_generator_
 rosidl_generator_c/custom_msgs/msg/sync.h: /opt/ros/foxy/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/custom_msgs/msg/sync.h: rosidl_adapter/custom_msgs/msg/Sync.idl
 rosidl_generator_c/custom_msgs/msg/sync.h: rosidl_adapter/custom_msgs/msg/Isobus.idl
+rosidl_generator_c/custom_msgs/msg/sync.h: rosidl_adapter/custom_msgs/msg/Gogsog.idl
 rosidl_generator_c/custom_msgs/msg/sync.h: /opt/ros/foxy/share/geometry_msgs/msg/Accel.idl
 rosidl_generator_c/custom_msgs/msg/sync.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelStamped.idl
 rosidl_generator_c/custom_msgs/msg/sync.h: /opt/ros/foxy/share/geometry_msgs/msg/AccelWithCovariance.idl
@@ -193,11 +194,26 @@ rosidl_generator_c/custom_msgs/msg/detail/isobus__struct.h: rosidl_generator_c/c
 rosidl_generator_c/custom_msgs/msg/detail/isobus__type_support.h: rosidl_generator_c/custom_msgs/msg/sync.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/isobus__type_support.h
 
+rosidl_generator_c/custom_msgs/msg/gogsog.h: rosidl_generator_c/custom_msgs/msg/sync.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/gogsog.h
+
+rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.h: rosidl_generator_c/custom_msgs/msg/sync.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.h
+
+rosidl_generator_c/custom_msgs/msg/detail/gogsog__struct.h: rosidl_generator_c/custom_msgs/msg/sync.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/gogsog__struct.h
+
+rosidl_generator_c/custom_msgs/msg/detail/gogsog__type_support.h: rosidl_generator_c/custom_msgs/msg/sync.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/gogsog__type_support.h
+
 rosidl_generator_c/custom_msgs/msg/detail/sync__functions.c: rosidl_generator_c/custom_msgs/msg/sync.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/sync__functions.c
 
 rosidl_generator_c/custom_msgs/msg/detail/isobus__functions.c: rosidl_generator_c/custom_msgs/msg/sync.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/isobus__functions.c
+
+rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c: rosidl_generator_c/custom_msgs/msg/sync.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c
 
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/sync__functions.c.o: CMakeFiles/custom_msgs__rosidl_generator_c.dir/flags.make
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/sync__functions.c.o: rosidl_generator_c/custom_msgs/msg/detail/sync__functions.c
@@ -225,16 +241,31 @@ CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/ms
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/isobus__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/isobus__functions.c -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/isobus__functions.c.s
 
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c.o: CMakeFiles/custom_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c.o: rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mlemsalu/ros2_ws_luke/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c.o   -c /home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c > CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c.i
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c.s
+
 # Object files for target custom_msgs__rosidl_generator_c
 custom_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/sync__functions.c.o" \
-"CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/isobus__functions.c.o"
+"CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/isobus__functions.c.o" \
+"CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c.o"
 
 # External object files for target custom_msgs__rosidl_generator_c
 custom_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
 
 libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/sync__functions.c.o
 libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/isobus__functions.c.o
+libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c.o
 libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make
 libcustom_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_introspection_c.so
 libcustom_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/libnav_msgs__rosidl_typesupport_c.so
@@ -269,7 +300,7 @@ libcustom_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libcustom_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/librcpputils.so
 libcustom_msgs__rosidl_generator_c.so: /opt/ros/foxy/lib/librcutils.so
 libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mlemsalu/ros2_ws_luke/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libcustom_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mlemsalu/ros2_ws_luke/build/custom_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libcustom_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -289,8 +320,13 @@ CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/isobus__functions.h
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/isobus__struct.h
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/isobus__type_support.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/gogsog.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/gogsog__struct.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/gogsog__type_support.h
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/sync__functions.c
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/isobus__functions.c
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.c
 	cd /home/mlemsalu/ros2_ws_luke/build/custom_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mlemsalu/ros2_ws_luke/src/custom_msgs /home/mlemsalu/ros2_ws_luke/src/custom_msgs /home/mlemsalu/ros2_ws_luke/build/custom_msgs /home/mlemsalu/ros2_ws_luke/build/custom_msgs /home/mlemsalu/ros2_ws_luke/build/custom_msgs/CMakeFiles/custom_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend
 

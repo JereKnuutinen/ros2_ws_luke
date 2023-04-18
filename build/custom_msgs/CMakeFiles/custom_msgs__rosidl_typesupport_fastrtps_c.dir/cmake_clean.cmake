@@ -1,8 +1,11 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/gogsog__type_support_c.cpp.o"
   "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/isobus__type_support_c.cpp.o"
   "CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/sync__type_support_c.cpp.o"
   "libcustom_msgs__rosidl_typesupport_fastrtps_c.pdb"
   "libcustom_msgs__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/gogsog__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/gogsog__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/isobus__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/isobus__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/sync__rosidl_typesupport_fastrtps_c.h"

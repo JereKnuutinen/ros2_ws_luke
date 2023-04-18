@@ -33,6 +33,12 @@ custom_msgs/msg/detail/isobus__struct.h
 /home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_generator_py/custom_msgs/custom_msgs/msg/detail/isobus__struct.h
 custom_msgs/msg/detail/isobus__functions.h
 /home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_generator_py/custom_msgs/custom_msgs/msg/detail/isobus__functions.h
+custom_msgs/msg/detail/gogsog__type_support.h
+/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_generator_py/custom_msgs/custom_msgs/msg/detail/gogsog__type_support.h
+custom_msgs/msg/detail/gogsog__struct.h
+/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_generator_py/custom_msgs/custom_msgs/msg/detail/gogsog__struct.h
+custom_msgs/msg/detail/gogsog__functions.h
+/home/mlemsalu/ros2_ws_luke/build/custom_msgs/rosidl_generator_py/custom_msgs/custom_msgs/msg/detail/gogsog__functions.h
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
 stdbool.h
@@ -727,6 +733,36 @@ cpython/unicodeobject.h
 /usr/include/python3.8/warnings.h
 
 /usr/include/python3.8/weakrefobject.h
+
+rosidl_generator_c/custom_msgs/msg/detail/gogsog__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/custom_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
+custom_msgs/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+custom_msgs/msg/detail/gogsog__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/detail/gogsog__struct.h
+
+rosidl_generator_c/custom_msgs/msg/detail/gogsog__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+std_msgs/msg/detail/header__struct.h
+rosidl_generator_c/custom_msgs/msg/detail/std_msgs/msg/detail/header__struct.h
+
+rosidl_generator_c/custom_msgs/msg/detail/gogsog__type_support.h
+rosidl_typesupport_interface/macros.h
+rosidl_generator_c/custom_msgs/msg/detail/rosidl_typesupport_interface/macros.h
+custom_msgs/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/custom_msgs/msg/detail/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+rosidl_runtime_c/message_type_support_struct.h
+rosidl_generator_c/custom_msgs/msg/detail/rosidl_runtime_c/message_type_support_struct.h
 
 rosidl_generator_c/custom_msgs/msg/detail/isobus__functions.h
 stdbool.h

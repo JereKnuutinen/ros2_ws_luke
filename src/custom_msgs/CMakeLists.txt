@@ -33,6 +33,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Sync.msg"
   "msg/Isobus.msg"
+  "msg/Gogsog.msg"
   DEPENDENCIES geometry_msgs nav_msgs sensor_msgs # Add packages that above messages depend on, in this case geometry_msgs for Sphere.msg
 )
 
