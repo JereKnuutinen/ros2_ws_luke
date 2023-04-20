@@ -144,7 +144,7 @@ class Can : public rclcpp::Node {
 
     // Populate the timestamp fields in the custom ROS 2 message header
     isobus_frame_msg.header.stamp.sec = tv.tv_sec; // seconds
-    isobus_frame_msg.header.stamp.nanosec = tv.tv_usec * 1000; // convert millisecods to nano 
+    isobus_frame_msg.header.stamp.nanosec = tv.tv_usec * 1000; // convert microsecods to nano 
     isobus_frame_msg.priority = iframe.priority;
     isobus_frame_msg.page = iframe.page;
     isobus_frame_msg.pgn = iframe.PGN;

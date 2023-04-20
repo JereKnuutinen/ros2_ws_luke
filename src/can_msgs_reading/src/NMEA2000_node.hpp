@@ -160,7 +160,7 @@ class NMEA2000Parser : public rclcpp::Node
     int Parse_FastPacketProtocol(uint8_t*  msgData, struct FastPacketData *data) {
         unsigned int SeqCount = msgData[0] >> 5;
         unsigned int FrameCount = msgData[0] & 0x1F;
-        incre = incre + 1;
+        
         //std::cout << FrameCount << std::endl;
         //std::cout << data->frame << std::endl;
         //std::cout << incre << std::endl;
@@ -227,8 +227,11 @@ class NMEA2000Parser : public rclcpp::Node
             return;
         }
 
-        // GNSS_SID = data->data[0]
-
+        auto GNSS_SID = data->data[0];
+        incre = incre + 1;
+        //int GNSS_SID_int = GNSS_SID; 
+        std::cout << "GNSS sid GNSS " <<(double)(data->data[0]) << std::endl;
+        //std::cout << incre << std::endl;
         PositionDate = (int)(data->data[1] | (data->data[2] << 8));
         PositionTime = (double)(data->data[3] | (data->data[4] << 8) | (data->data[5] << 16) | (data->data[6] << 24)) * 1e-4;
 
@@ -315,6 +318,7 @@ class NMEA2000Parser : public rclcpp::Node
         }
 
         // GNSS_SID = data->data[0]
+        std::cout << "GNSS sid  noise " <<(double)(data->data[0]) << std::endl;
 
         RMS_uncertainty = (double)(data->data[1] | (data->data[2] << 8)) * 1e-2;
         STD_of_Major = (double)(data->data[3] | (data->data[4] << 8)) * 1e-2;
@@ -326,6 +330,8 @@ class NMEA2000Parser : public rclcpp::Node
     }
 
     void Parse_COG_SOG_RapidUpdate(uint8_t* data, std_msgs::msg::Header headeri) {
+        std::cout << "GNSS sid  GOG_SOG " <<(double)(data[0]) << std::endl;
+
         compass_rad = ((double)((unsigned short)(data[2] | (data[3] << 8)))) * 1e-4;
         speed_ms =((double)((unsigned short)(data[4] | (data[5] << 8)))) * 1e-2;
 
