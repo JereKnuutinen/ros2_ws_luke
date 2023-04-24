@@ -5,14 +5,15 @@ from rclpy.serialization import serialize_message
 import numpy as np
 import os
 #import open3d as o3d
-
-from rclpy.qos import qos_profile_sensor_data
+from rclpy import qos
+#from rclpy.qos import qos_profile_sensor_data
 from message_filters import ApproximateTimeSynchronizer, Subscriber
 from sensor_msgs.msg import Image, PointCloud2, CameraInfo
 from nav_msgs.msg import Odometry
 from std_msgs.msg import String
 from geometry_msgs.msg import PoseStamped
-from custom_msgs.msg import Sync                         
+from custom_msgs.msg import Sync   
+
 
 
         
@@ -21,9 +22,10 @@ class LidarLidarSyncNode(Node):
         super().__init__("LidarLidarSyncNode")
 
         # Subscribers for velodyne pointcloud
-        self.plc_sub_1 = Subscriber(self, PointCloud2, "/lidar_right/velodyne_points", qos_profile=qos_profile_sensor_data)
-        self.plc_sub_2 = Subscriber(self, PointCloud2, "/lidar_left/velodyne_points", qos_profile=qos_profile_sensor_data)
+        self.plc_sub_1 = Subscriber(self, PointCloud2, "/lidar_right/velodyne_points") #, qos_profile=qos.qos_profile_sensor_data)
+        self.plc_sub_2 = Subscriber(self, PointCloud2, "/lidar_left/velodyne_points") #, qos_profile=qos.qos_profile_sensor_data)
         
+        #qos_profile = qos.HistoryPolicy.KEEP_ALL
         self.pcl_pub_1 = self.create_publisher(PointCloud2, 'synced_pc_lidar_1', 10)
         self.pcl_pub_2 = self.create_publisher(PointCloud2, 'synced_pc_lidar_2', 10)
 

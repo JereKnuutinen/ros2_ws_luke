@@ -1,0 +1,10 @@
+/synced_pc_lidar_1:
+  history: keep_all
+  durability: volatile
+  reliability: reliable
+
+/synced_pc_lidar_2:
+  history: keep_all
+  durability: volatile
+  reliability: reliable
+  
