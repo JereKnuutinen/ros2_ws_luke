@@ -11,6 +11,8 @@
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 #include "custom_msgs/msg/gogsog.hpp" 
+#include "custom_msgs/msg/imusid.hpp"
+#include "custom_msgs/msg/gnsssid.hpp"
 
 
 #define FAST_PACKET_DATA_SIZE 256
@@ -32,6 +34,11 @@ class NMEA2000Parser : public rclcpp::Node
         IMU_publisher_ = this->create_publisher<sensor_msgs::msg::Imu>("Imu_messages", 10);
         GNSS_publisher_ = this->create_publisher<sensor_msgs::msg::NavSatFix>("GNSS_messages", 10);
         Gogsog_publisher_ = this->create_publisher<custom_msgs::msg::Gogsog>("Gogsog_messages", 10);
+
+
+        GNSS_sid_publisher_ = this->create_publisher<custom_msgs::msg::Gnsssid>("GNSS_sid_messages", 10);
+        IMU_sid_publisher_ = this->create_publisher<custom_msgs::msg::Imusid>("Imu_sid_messages", 10);
+
         // GNSS Position Data
         PositionDate = 0;
         PositionTime = 0;
@@ -278,6 +285,15 @@ class NMEA2000Parser : public rclcpp::Node
 
         GNSS_publisher_->publish(gnss_msg);
 
+        //GNSS message with SID
+        custom_msgs::msg::Gnsssid gnss_sid_msg;
+        gnss_sid_msg.gnss_mes.header.stamp = headeri.stamp;
+        gnss_sid_msg.gnss_mes.latitude = latitude;
+        gnss_sid_msg.gnss_mes.longitude = longitude;
+        gnss_sid_msg.gnss_mes.altitude = altitude;
+        gnss_sid_msg.gnss_sid = (double)(data->data[0]);
+        GNSS_sid_publisher_->publish(gnss_sid_msg);
+
         /*
         std::cout << std::setprecision(13) << latitude << std::endl;
         std::cout << "GPS, longitude "<< longitude << std::endl;
@@ -346,6 +362,8 @@ class NMEA2000Parser : public rclcpp::Node
         gogsog_msg.compass_rad = compass_rad;
         Gogsog_publisher_->publish(gogsog_msg);
 
+        // IMU message with SID
+
 
     }
 
@@ -386,6 +404,13 @@ class NMEA2000Parser : public rclcpp::Node
         imu_msg.header.stamp = headeri.stamp;
         imu_msg.orientation = ros_quaternion;
         IMU_publisher_->publish(imu_msg);
+
+        // IMU message with SID
+        custom_msgs::msg::Imusid imu_sid_msg;
+        imu_sid_msg.imu_mes.header.stamp = headeri.stamp;
+        imu_sid_msg.imu_mes.orientation = ros_quaternion;
+        imu_sid_msg.imu_sid = (double)(data[0]);
+        IMU_sid_publisher_->publish(imu_sid_msg);
 
         //DVAR("GPS","Pitch",Pitch);
         //DVAR("GPS","Roll",Roll);
@@ -431,5 +456,8 @@ class NMEA2000Parser : public rclcpp::Node
     rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr IMU_publisher_;
     rclcpp::Publisher<sensor_msgs::msg::NavSatFix>::SharedPtr GNSS_publisher_;
     rclcpp::Publisher<custom_msgs::msg::Gogsog>::SharedPtr Gogsog_publisher_;
+
+    rclcpp::Publisher<custom_msgs::msg::Imusid>::SharedPtr IMU_sid_publisher_;
+    rclcpp::Publisher<custom_msgs::msg::Gnsssid>::SharedPtr GNSS_sid_publisher_;
 
 };

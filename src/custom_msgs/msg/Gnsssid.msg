@@ -1,0 +1,2 @@
+sensor_msgs/NavSatFix gnss_mes
+float64 gnss_sid
